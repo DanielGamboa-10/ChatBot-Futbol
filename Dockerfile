@@ -22,4 +22,4 @@ COPY . .
 
 EXPOSE 8501
 
-CMD ["streamlit", "run", "app/main.py", "--server.address=0.0.0.0", "--server.port=8501"]
+CMD ["streamlit", "run", "tribuna_global/app.py", "--server.address=0.0.0.0", "--server.port=8501"]

@@ -2,9 +2,9 @@
   "version": "2.0.0",
   "tasks": [
     {
-      "label": "Run Streamlit App",
+      "label": "Run Tribuna Global (Streamlit)",
       "type": "shell",
-      "command": "streamlit run app/main.py --server.address=0.0.0.0 --server.port=8501",
+      "command": "py -m streamlit run tribuna_global/app.py --server.address=0.0.0.0 --server.port=8501",
       "group": {
         "kind": "build",
         "isDefault": true
@@ -12,15 +12,21 @@
       "problemMatcher": []
     },
     {
-      "label": "Check Python Version",
+      "label": "Run Acceptance Tests (Pytest)",
       "type": "shell",
-      "command": "python --version",
+      "command": "py -m pytest tribuna_global/tests/test_aceptacion.py -v",
+      "problemMatcher": []
+    },
+    {
+      "label": "Run Original Streamlit Demo",
+      "type": "shell",
+      "command": "py -m streamlit run app/main.py --server.address=0.0.0.0 --server.port=8501",
       "problemMatcher": []
     },
     {
       "label": "Install Requirements",
       "type": "shell",
-      "command": "pip install --no-cache-dir -r requirements.txt",
+      "command": "py -m pip install --no-cache-dir -r tribuna_global/requirements.txt",
       "problemMatcher": []
     }
   ]

@@ -1,0 +1,8 @@
+{
+    "python-envs.defaultEnvManager": "ms-python.python:system",
+    "python.terminal.useEnvFile": true,
+    "python.defaultInterpreterPath": "C:\\Users\\Danie\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe",
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}/tribuna_global"
+    ]
+}

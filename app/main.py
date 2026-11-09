@@ -58,9 +58,16 @@ if st.button("Enviar"):
             )
 
         else:
+            google_api_key = os.getenv("GOOGLE_API_KEY") or os.getenv("GEMINI_API_KEY")
+            if not google_api_key:
+                raise ValueError(
+                    "Falta GOOGLE_API_KEY (o GEMINI_API_KEY) en el archivo .env."
+                )
+
             llm = ChatGoogleGenerativeAI(
-                model="gemini-1.5-flash",
+                model="gemini-2.5-flash",
                 temperature=0.2,
+                google_api_key=google_api_key,
             )
 
         response = llm.invoke(prompt)
