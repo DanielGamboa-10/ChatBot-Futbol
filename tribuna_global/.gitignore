@@ -1,0 +1,21 @@
+# Variables de entorno y secretos
+.env
+
+# Caché de Python
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Archivos temporales de escritura atómica
+*.tmp
+
+# Entornos virtuales
+.venv/
+venv/
+env/
+
+# Archivos del sistema operativo
+.DS_Store
+Thumbs.db
+

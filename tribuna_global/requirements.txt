@@ -1,0 +1,8 @@
+streamlit==1.58.0
+langchain-core==1.7.6
+langchain-openai==1.7.4
+langchain-google-genai==4.4.3
+python-dotenv==1.2.2
+pydantic==2.14.3
+pytest==9.2.0
+
