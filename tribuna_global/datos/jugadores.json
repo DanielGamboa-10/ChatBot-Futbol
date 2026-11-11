@@ -8,19 +8,19 @@
       "apodo": "La Pulga",
       "posicion": "Delantero / Mediapunta",
       "foto_url": "https://upload.wikimedia.org/wikipedia/commons/b/b4/Lionel-Messi-Argentina-2022-FIFA-World-Cup_%28cropped%29.jpg",
-      "partidos": 1150,
-      "goles": 890,
-      "asistencias": 405,
+      "partidos": 1158,
+      "goles": 898,
+      "asistencias": 410,
       "titulos": 46,
       "balones_de_oro": 8,
       "botas_de_oro": 6,
       "trayectoria": [
         {"club": "FC Barcelona", "periodo": "2004-2021", "partidos": 778, "goles": 672},
         {"club": "Paris Saint-Germain", "periodo": "2021-2023", "partidos": 75, "goles": 32},
-        {"club": "Inter Miami CF", "periodo": "2023-act.", "partidos": 84, "goles": 76},
-        {"club": "Selección Argentina", "periodo": "2005-act.", "partidos": 208, "goles": 126}
+        {"club": "Inter Miami CF", "periodo": "2023-act.", "partidos": 94, "goles": 84},
+        {"club": "Selección Argentina", "periodo": "2005-act.", "partidos": 211, "goles": 128}
       ],
-      "logros": ["Copa del Mundo (2022)", "4 Champions League", "2 Copas América (2021, 2024)", "10 LaLiga", "MLS Supporters' Shield & MLS Cup"]
+      "logros": ["Copa del Mundo (2022)", "4 Champions League", "2 Copas América (2021, 2024)", "10 LaLiga", "MLS Supporters' Shield & MLS Cup", "Jugador más laureado de la historia"]
     },
     {
       "id": "j002",
@@ -29,9 +29,9 @@
       "apodo": "CR7 / El Bicho",
       "posicion": "Delantero Centro",
       "foto_url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/Cristiano_Ronaldo_2018.jpg",
-      "partidos": 1300,
-      "goles": 945,
-      "asistencias": 260,
+      "partidos": 1312,
+      "goles": 956,
+      "asistencias": 262,
       "titulos": 35,
       "balones_de_oro": 5,
       "botas_de_oro": 4,
@@ -40,10 +40,10 @@
         {"club": "Manchester United", "periodo": "2003-2009, 2021-2022", "partidos": 346, "goles": 145},
         {"club": "Real Madrid", "periodo": "2009-2018", "partidos": 438, "goles": 450},
         {"club": "Juventus", "periodo": "2018-2021", "partidos": 134, "goles": 101},
-        {"club": "Al-Nassr FC", "periodo": "2023-act.", "partidos": 120, "goles": 112},
-        {"club": "Selección Portugal", "periodo": "2003-act.", "partidos": 234, "goles": 146}
+        {"club": "Al-Nassr FC", "periodo": "2023-act.", "partidos": 135, "goles": 125},
+        {"club": "Selección Portugal", "periodo": "2003-act.", "partidos": 238, "goles": 149}
       ],
-      "logros": ["5 Champions League", "Eurocopa (2016)", "3 Premier League", "2 LaLiga", "Máximo goleador histórico del fútbol profesional"]
+      "logros": ["5 Champions League", "Eurocopa (2016)", "3 Premier League", "2 LaLiga", "Máximo goleador histórico del fútbol profesional (956 goles)"]
     },
     {
       "id": "j003",
@@ -52,9 +52,9 @@
       "apodo": "Ney / O Astro",
       "posicion": "Extremo Izquierdo / Mediapunta",
       "foto_url": "https://upload.wikimedia.org/wikipedia/commons/8/83/Bra-Cos_%281%29_%28cropped%29.jpg",
-      "partidos": 725,
-      "goles": 442,
-      "asistencias": 254,
+      "partidos": 732,
+      "goles": 445,
+      "asistencias": 256,
       "titulos": 28,
       "balones_de_oro": 0,
       "botas_de_oro": 0,
@@ -62,8 +62,8 @@
         {"club": "Santos FC", "periodo": "2009-2013", "partidos": 225, "goles": 136},
         {"club": "FC Barcelona", "periodo": "2013-2017", "partidos": 186, "goles": 105},
         {"club": "Paris Saint-Germain", "periodo": "2017-2023", "partidos": 173, "goles": 118},
-        {"club": "Al-Hilal", "periodo": "2023-act.", "partidos": 12, "goles": 4},
-        {"club": "Selección Brasil", "periodo": "2010-act.", "partidos": 128, "goles": 79}
+        {"club": "Al-Hilal", "periodo": "2023-act.", "partidos": 18, "goles": 7},
+        {"club": "Selección Brasil", "periodo": "2010-act.", "partidos": 130, "goles": 79}
       ],
       "logros": ["Copa Libertadores (2011)", "Champions League (2015)", "Oro Olímpico Río 2016", "Máximo goleador Selección Brasil"]
     },
@@ -74,19 +74,19 @@
       "apodo": "Donatello / Kyky",
       "posicion": "Delantero / Extremo",
       "foto_url": "https://upload.wikimedia.org/wikipedia/commons/5/57/2019-07-17_SG_Dynamo_Dresden_vs._Paris_Saint-Germain_by_Sandro_Halank%E2%80%93129_%28cropped%29.jpg",
-      "partidos": 530,
-      "goles": 395,
-      "asistencias": 178,
-      "titulos": 19,
+      "partidos": 552,
+      "goles": 418,
+      "asistencias": 186,
+      "titulos": 20,
       "balones_de_oro": 0,
-      "botas_de_oro": 0,
+      "botas_de_oro": 1,
       "trayectoria": [
         {"club": "AS Monaco", "periodo": "2015-2017", "partidos": 60, "goles": 27},
         {"club": "Paris Saint-Germain", "periodo": "2017-2024", "partidos": 308, "goles": 256},
-        {"club": "Real Madrid", "periodo": "2024-act.", "partidos": 77, "goles": 69},
-        {"club": "Selección Francia", "periodo": "2017-act.", "partidos": 107, "goles": 67}
+        {"club": "Real Madrid", "periodo": "2024-act.", "partidos": 98, "goles": 89},
+        {"club": "Selección Francia", "periodo": "2017-act.", "partidos": 112, "goles": 72}
       ],
-      "logros": ["Copa del Mundo (2018)", "Bota de Oro Mundial (2022 - 8 goles)", "Supercopa de Europa (2024)", "Máximo goleador histórico del PSG"]
+      "logros": ["Copa del Mundo (2018)", "Pichichi de LaLiga", "Bota de Oro Mundial (2022 - 8 goles)", "Supercopa de Europa (2024)", "Máximo goleador histórico del PSG"]
     },
     {
       "id": "j005",
@@ -95,20 +95,20 @@
       "apodo": "El Androide",
       "posicion": "Delantero Centro",
       "foto_url": "https://upload.wikimedia.org/wikipedia/commons/0/07/Erling_Haaland_2023_%28cropped%29.jpg",
-      "partidos": 390,
-      "goles": 340,
-      "asistencias": 60,
-      "titulos": 10,
+      "partidos": 412,
+      "goles": 365,
+      "asistencias": 65,
+      "titulos": 11,
       "balones_de_oro": 0,
-      "botas_de_oro": 1,
+      "botas_de_oro": 2,
       "trayectoria": [
         {"club": "Molde FK", "periodo": "2017-2018", "partidos": 50, "goles": 20},
         {"club": "Red Bull Salzburgo", "periodo": "2019", "partidos": 27, "goles": 29},
         {"club": "Borussia Dortmund", "periodo": "2020-2022", "partidos": 89, "goles": 86},
-        {"club": "Manchester City", "periodo": "2022-act.", "partidos": 165, "goles": 140},
-        {"club": "Selección Noruega", "periodo": "2019-act.", "partidos": 59, "goles": 65}
+        {"club": "Manchester City", "periodo": "2022-act.", "partidos": 182, "goles": 160},
+        {"club": "Selección Noruega", "periodo": "2019-act.", "partidos": 64, "goles": 70}
       ],
-      "logros": ["Triplete con Manchester City (2023)", "Champions League (2023)", "Máximo goleador histórico Selección Noruega"]
+      "logros": ["Triplete con Manchester City (2023)", "Champions League (2023)", "Bota de Oro Europea", "Máximo goleador histórico Selección Noruega"]
     },
     {
       "id": "j006",
@@ -117,16 +117,16 @@
       "apodo": "Vini Jr.",
       "posicion": "Extremo Izquierdo",
       "foto_url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/Vinicius_Junior_2021.jpg",
-      "partidos": 420,
-      "goles": 132,
-      "asistencias": 105,
-      "titulos": 15,
+      "partidos": 444,
+      "goles": 145,
+      "asistencias": 115,
+      "titulos": 16,
       "balones_de_oro": 0,
       "botas_de_oro": 0,
       "trayectoria": [
         {"club": "Flamengo", "periodo": "2017-2018", "partidos": 69, "goles": 14},
-        {"club": "Real Madrid", "periodo": "2018-act.", "partidos": 310, "goles": 110},
-        {"club": "Selección Brasil", "periodo": "2019-act.", "partidos": 57, "goles": 14}
+        {"club": "Real Madrid", "periodo": "2018-act.", "partidos": 332, "goles": 122},
+        {"club": "Selección Brasil", "periodo": "2019-act.", "partidos": 61, "goles": 16}
       ],
       "logros": ["2 Champions League (2022, 2024)", "3 LaLiga", "Mejor Jugador UEFA Champions League 2023/24"]
     },
@@ -137,19 +137,19 @@
       "apodo": "El Faraón",
       "posicion": "Extremo Derecho",
       "foto_url": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Mohamed_Salah_2018.jpg",
-      "partidos": 740,
-      "goles": 372,
-      "asistencias": 182,
-      "titulos": 11,
+      "partidos": 758,
+      "goles": 384,
+      "asistencias": 190,
+      "titulos": 12,
       "balones_de_oro": 0,
       "botas_de_oro": 0,
       "trayectoria": [
         {"club": "FC Basel", "periodo": "2012-2014", "partidos": 79, "goles": 20},
         {"club": "Chelsea / Fiorentina / Roma", "periodo": "2014-2017", "partidos": 128, "goles": 45},
-        {"club": "Liverpool FC", "periodo": "2017-act.", "partidos": 410, "goles": 255},
-        {"club": "Selección Egipto", "periodo": "2011-act.", "partidos": 108, "goles": 62}
+        {"club": "Liverpool FC", "periodo": "2017-act.", "partidos": 426, "goles": 266},
+        {"club": "Selección Egipto", "periodo": "2011-act.", "partidos": 111, "goles": 64}
       ],
-      "logros": ["Champions League (2019)", "Premier League (2020, 2025)", "3 Botas de Oro Premier League", "Máximo goleador africano en Champions"]
+      "logros": ["Champions League (2019)", "Premier League (2020, 2025)", "4 Botas de Oro Premier League", "Máximo goleador africano en Champions"]
     },
     {
       "id": "j008",
@@ -158,18 +158,18 @@
       "apodo": "Lewy",
       "posicion": "Delantero Centro",
       "foto_url": "https://upload.wikimedia.org/wikipedia/commons/0/03/Robert_Lewandowski%2C_FC_Bayern_M%C3%BCnchen_%28opp-FC_Schalke_04%2C_2019-08-24%29_01.jpg",
-      "partidos": 990,
-      "goles": 710,
-      "asistencias": 195,
-      "titulos": 30,
+      "partidos": 1008,
+      "goles": 725,
+      "asistencias": 199,
+      "titulos": 31,
       "balones_de_oro": 0,
       "botas_de_oro": 2,
       "trayectoria": [
         {"club": "Lech Poznań", "periodo": "2008-2010", "partidos": 82, "goles": 41},
         {"club": "Borussia Dortmund", "periodo": "2010-2014", "partidos": 187, "goles": 103},
         {"club": "Bayern Múnich", "periodo": "2014-2022", "partidos": 375, "goles": 344},
-        {"club": "FC Barcelona", "periodo": "2022-act.", "partidos": 165, "goles": 115},
-        {"club": "Selección Polonia", "periodo": "2008-act.", "partidos": 160, "goles": 88}
+        {"club": "FC Barcelona", "periodo": "2022-act.", "partidos": 180, "goles": 128},
+        {"club": "Selección Polonia", "periodo": "2008-act.", "partidos": 164, "goles": 90}
       ],
       "logros": ["Champions League (2020)", "The Best FIFA (2020, 2021)", "LaLiga (2023, 2025)", "Pichichi de LaLiga"]
     },
@@ -180,17 +180,17 @@
       "apodo": "El Mago de Zadar",
       "posicion": "Centrocampista Organizador",
       "foto_url": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Luka_Modric_Interview_2021_%28cropped%29.jpg",
-      "partidos": 940,
-      "goles": 96,
-      "asistencias": 152,
-      "titulos": 34,
+      "partidos": 956,
+      "goles": 98,
+      "asistencias": 156,
+      "titulos": 35,
       "balones_de_oro": 1,
       "botas_de_oro": 0,
       "trayectoria": [
         {"club": "Dinamo Zagreb", "periodo": "2003-2008", "partidos": 130, "goles": 33},
         {"club": "Tottenham Hotspur", "periodo": "2008-2012", "partidos": 160, "goles": 17},
-        {"club": "Real Madrid", "periodo": "2012-act.", "partidos": 585, "goles": 43},
-        {"club": "Selección Croacia", "periodo": "2006-act.", "partidos": 188, "goles": 28}
+        {"club": "Real Madrid", "periodo": "2012-act.", "partidos": 602, "goles": 45},
+        {"club": "Selección Croacia", "periodo": "2006-act.", "partidos": 192, "goles": 29}
       ],
       "logros": ["Balón de Oro (2018)", "6 Champions League (récord histórico)", "Subcampeón del Mundo (2018)", "Bronce Mundial (2022)"]
     },
@@ -201,17 +201,17 @@
       "apodo": "KDB",
       "posicion": "Mediocampista Ofensivo / Creador",
       "foto_url": "https://upload.wikimedia.org/wikipedia/commons/4/40/Kevin_De_Bruyne_201807091.jpg",
-      "partidos": 765,
-      "goles": 192,
-      "asistencias": 328,
+      "partidos": 782,
+      "goles": 198,
+      "asistencias": 338,
       "titulos": 24,
       "balones_de_oro": 0,
       "botas_de_oro": 0,
       "trayectoria": [
         {"club": "KRC Genk", "periodo": "2008-2012", "partidos": 113, "goles": 17},
         {"club": "Werder Bremen / Wolfsburgo", "periodo": "2012-2015", "partidos": 107, "goles": 30},
-        {"club": "Manchester City", "periodo": "2015-act.", "partidos": 425, "goles": 110},
-        {"club": "Selección Bélgica", "periodo": "2010-act.", "partidos": 112, "goles": 32}
+        {"club": "Manchester City", "periodo": "2015-act.", "partidos": 440, "goles": 115},
+        {"club": "Selección Bélgica", "periodo": "2010-act.", "partidos": 116, "goles": 33}
       ],
       "logros": ["Champions League (2023)", "6 Premier League", "2 Jugador del Año PFA", "Líder histórico de asistencias de la Premier"]
     },
@@ -222,9 +222,9 @@
       "apodo": "El Pistolero",
       "posicion": "Delantero Centro",
       "foto_url": "https://upload.wikimedia.org/wikipedia/commons/d/d4/Luis_Suarez_2018.jpg",
-      "partidos": 1010,
-      "goles": 590,
-      "asistencias": 312,
+      "partidos": 1024,
+      "goles": 598,
+      "asistencias": 318,
       "titulos": 26,
       "balones_de_oro": 0,
       "botas_de_oro": 2,
@@ -233,7 +233,7 @@
         {"club": "Liverpool FC", "periodo": "2011-2014", "partidos": 133, "goles": 82},
         {"club": "FC Barcelona", "periodo": "2014-2020", "partidos": 283, "goles": 198},
         {"club": "Atlético de Madrid", "periodo": "2020-2022", "partidos": 83, "goles": 34},
-        {"club": "Inter Miami CF", "periodo": "2024-act.", "partidos": 58, "goles": 38},
+        {"club": "Inter Miami CF", "periodo": "2024-act.", "partidos": 72, "goles": 46},
         {"club": "Selección Uruguay", "periodo": "2007-2024", "partidos": 143, "goles": 69}
       ],
       "logros": ["Champions League (2015)", "Copa América (2011)", "2 Botas de Oro (2014, 2016)", "MLS Supporters' Shield"]
@@ -245,9 +245,9 @@
       "apodo": "El 10 / El Zurdo de Oro",
       "posicion": "Mediocampista Ofensivo / Volante Creativo",
       "foto_url": "https://upload.wikimedia.org/wikipedia/commons/0/07/James_Rodr%C3%ADguez_2018.jpg",
-      "partidos": 635,
-      "goles": 170,
-      "asistencias": 198,
+      "partidos": 648,
+      "goles": 174,
+      "asistencias": 204,
       "titulos": 24,
       "balones_de_oro": 0,
       "botas_de_oro": 0,
@@ -257,8 +257,8 @@
         {"club": "AS Monaco", "periodo": "2013-2014", "partidos": 38, "goles": 10},
         {"club": "Real Madrid", "periodo": "2014-2020", "partidos": 125, "goles": 37},
         {"club": "Bayern Múnich", "periodo": "2017-2019", "partidos": 67, "goles": 15},
-        {"club": "Everton / Olympiacos / São Paulo / Rayo Vallecano", "periodo": "2020-act.", "partidos": 98, "goles": 18},
-        {"club": "Selección Colombia", "periodo": "2011-act.", "partidos": 115, "goles": 31}
+        {"club": "Everton / Olympiacos / São Paulo / Rayo Vallecano", "periodo": "2020-act.", "partidos": 108, "goles": 21},
+        {"club": "Selección Colombia", "periodo": "2011-act.", "partidos": 118, "goles": 32}
       ],
       "logros": ["Bota de Oro Mundial Brasil 2014 (6 goles)", "Premio Puskás FIFA (2014)", "2 Champions League", "Mejor Jugador Copa América 2024"]
     },
@@ -269,9 +269,9 @@
       "apodo": "Lucho / El Guajiro",
       "posicion": "Extremo Izquierdo",
       "foto_url": "https://upload.wikimedia.org/wikipedia/commons/b/b3/Luis_D%C3%ADaz_2022.jpg",
-      "partidos": 445,
-      "goles": 126,
-      "asistencias": 68,
+      "partidos": 462,
+      "goles": 136,
+      "asistencias": 74,
       "titulos": 13,
       "balones_de_oro": 0,
       "botas_de_oro": 0,
@@ -279,8 +279,8 @@
         {"club": "Barranquilla FC / Junior", "periodo": "2016-2019", "partidos": 140, "goles": 23},
         {"club": "FC Porto", "periodo": "2019-2022", "partidos": 125, "goles": 41},
         {"club": "Liverpool FC", "periodo": "2022-2025", "partidos": 103, "goles": 29},
-        {"club": "Bayern Múnich", "periodo": "2025-act.", "partidos": 32, "goles": 14},
-        {"club": "Selección Colombia", "periodo": "2018-act.", "partidos": 72, "goles": 21}
+        {"club": "Bayern Múnich", "periodo": "2025-act.", "partidos": 48, "goles": 21},
+        {"club": "Selección Colombia", "periodo": "2018-act.", "partidos": 76, "goles": 23}
       ],
       "logros": ["Premier League (2025)", "Goleador Copa América 2021", "2 Primeira Liga con Porto", "Subcampeón Copa América 2024"]
     },
@@ -291,17 +291,17 @@
       "apodo": "Sonny",
       "posicion": "Extremo / Delantero",
       "foto_url": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Son_Heung-min_2022.jpg",
-      "partidos": 705,
-      "goles": 265,
-      "asistencias": 135,
+      "partidos": 720,
+      "goles": 272,
+      "asistencias": 140,
       "titulos": 1,
       "balones_de_oro": 0,
       "botas_de_oro": 0,
       "trayectoria": [
         {"club": "Hamburgo SV", "periodo": "2010-2013", "partidos": 78, "goles": 20},
         {"club": "Bayer Leverkusen", "periodo": "2013-2015", "partidos": 87, "goles": 29},
-        {"club": "Tottenham Hotspur", "periodo": "2015-act.", "partidos": 450, "goles": 178},
-        {"club": "Selección Corea del Sur", "periodo": "2010-act.", "partidos": 136, "goles": 53}
+        {"club": "Tottenham Hotspur", "periodo": "2015-act.", "partidos": 464, "goles": 184},
+        {"club": "Selección Corea del Sur", "periodo": "2010-act.", "partidos": 140, "goles": 55}
       ],
       "logros": ["Bota de Oro Premier League (2021/22)", "Premio Puskás FIFA (2020)", "Oro Juegos Asiáticos (2018)", "Ícono indiscutido del fútbol asiático"]
     },
@@ -312,9 +312,9 @@
       "apodo": "El León de Teranga",
       "posicion": "Extremo / Delantero",
       "foto_url": "https://upload.wikimedia.org/wikipedia/commons/0/05/Sadio_Man%C3%A9_2018.jpg",
-      "partidos": 660,
-      "goles": 262,
-      "asistencias": 118,
+      "partidos": 675,
+      "goles": 270,
+      "asistencias": 122,
       "titulos": 12,
       "balones_de_oro": 0,
       "botas_de_oro": 0,
@@ -323,8 +323,8 @@
         {"club": "Southampton FC", "periodo": "2014-2016", "partidos": 75, "goles": 25},
         {"club": "Liverpool FC", "periodo": "2016-2022", "partidos": 269, "goles": 120},
         {"club": "Bayern Múnich", "periodo": "2022-2023", "partidos": 38, "goles": 12},
-        {"club": "Al-Nassr FC", "periodo": "2023-act.", "partidos": 85, "goles": 38},
-        {"club": "Selección Senegal", "periodo": "2012-act.", "partidos": 114, "goles": 48}
+        {"club": "Al-Nassr FC", "periodo": "2023-act.", "partidos": 98, "goles": 44},
+        {"club": "Selección Senegal", "periodo": "2012-act.", "partidos": 118, "goles": 50}
       ],
       "logros": ["Copa Africana de Naciones (2022)", "Champions League (2019)", "Premier League (2020)", "Bota de Oro Premier (2018/19)"]
     },

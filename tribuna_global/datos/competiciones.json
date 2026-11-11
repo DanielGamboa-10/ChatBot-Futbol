@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "temporada_referencia": "2024-25 / 2025-26",
+  "temporada_referencia": "Temporada 2026-27 (Al 10 de noviembre de 2026)",
   "ligas": [
     {
       "id": "pl",
@@ -8,19 +8,19 @@
       "pais": "Inglaterra",
       "tipo": "Liga Nacional",
       "logo_archivo": "premier.svg",
-      "descripcion": "La máxima categoría de Inglaterra. Temporada 2024-25 coronó a Liverpool campeón y la 2025-26 consagró al Arsenal FC con 85 puntos.",
-      "campeon_actual": "Arsenal FC (2025-26) / Liverpool (2024-25)",
+      "descripcion": "Temporada 2026-27 en curso (Jornada 11 - 10/11/2026). Liverpool y Manchester City lideran el campeonato en una cerrada disputa por el titulo.",
+      "campeon_actual": "Arsenal FC (Campeon defensor 2025-26)",
       "equipos": [
-        {"nombre": "Arsenal FC", "posicion": 1, "pj": 38, "puntos": 85, "dg": "+44", "estado": "Campeon"},
-        {"nombre": "Manchester City", "posicion": 2, "pj": 38, "puntos": 78, "dg": "+42", "estado": "Champions League"},
-        {"nombre": "Manchester United", "posicion": 3, "pj": 38, "puntos": 71, "dg": "+19", "estado": "Champions League"},
-        {"nombre": "Aston Villa", "posicion": 4, "pj": 38, "puntos": 65, "dg": "+7", "estado": "Champions League"},
-        {"nombre": "Liverpool FC", "posicion": 5, "pj": 38, "puntos": 60, "dg": "+10", "estado": "Europa League"},
-        {"nombre": "Bournemouth", "posicion": 6, "pj": 38, "puntos": 57, "dg": "+4", "estado": "Europa League"},
-        {"nombre": "Sunderland", "posicion": 7, "pj": 38, "puntos": 54, "dg": "-6", "estado": "Conference League"},
-        {"nombre": "Brighton", "posicion": 8, "pj": 38, "puntos": 53, "dg": "+6", "estado": "Mitad de tabla"},
-        {"nombre": "Chelsea FC", "posicion": 10, "pj": 38, "puntos": 52, "dg": "+6", "estado": "Mitad de tabla"},
-        {"nombre": "Newcastle United", "posicion": 12, "pj": 38, "puntos": 49, "dg": "-2", "estado": "Mitad de tabla"}
+        {"nombre": "Liverpool FC", "posicion": 1, "pj": 11, "puntos": 28, "dg": "+15", "estado": "Lider - Puesto Champions League"},
+        {"nombre": "Manchester City", "posicion": 2, "pj": 11, "puntos": 26, "dg": "+16", "estado": "Puesto Champions League"},
+        {"nombre": "Arsenal FC", "posicion": 3, "pj": 11, "puntos": 24, "dg": "+12", "estado": "Puesto Champions League"},
+        {"nombre": "Chelsea FC", "posicion": 4, "pj": 11, "puntos": 22, "dg": "+9", "estado": "Puesto Champions League"},
+        {"nombre": "Newcastle United", "posicion": 5, "pj": 11, "puntos": 20, "dg": "+6", "estado": "Puesto Europa League"},
+        {"nombre": "Aston Villa", "posicion": 6, "pj": 11, "puntos": 19, "dg": "+4", "estado": "Puesto Europa League"},
+        {"nombre": "Tottenham Hotspur", "posicion": 7, "pj": 11, "puntos": 18, "dg": "+5", "estado": "Puesto Conference League"},
+        {"nombre": "Brighton & Hove Albion", "posicion": 8, "pj": 11, "puntos": 16, "dg": "+2", "estado": "Mitad de tabla"},
+        {"nombre": "Manchester United", "posicion": 9, "pj": 11, "puntos": 15, "dg": "0", "estado": "Mitad de tabla"},
+        {"nombre": "Bournemouth", "posicion": 10, "pj": 11, "puntos": 14, "dg": "-1", "estado": "Mitad de tabla"}
       ]
     },
     {
@@ -29,19 +29,19 @@
       "pais": "España",
       "tipo": "Liga Nacional",
       "logo_archivo": "laliga.svg",
-      "descripcion": "La primera división de España. Temporada 2024-25 consagró al FC Barcelona campeón con 88 puntos y 102 goles a favor.",
-      "campeon_actual": "FC Barcelona (88 pts)",
+      "descripcion": "Temporada 2026-27 en curso (Jornada 13 - 10/11/2026). El FC Barcelona y el Real Madrid comandan la clasificacion con Kylian Mbappe y Lamine Yamal como figuras estelares.",
+      "campeon_actual": "FC Barcelona (Campeon defensor 2025-26)",
       "equipos": [
-        {"nombre": "FC Barcelona", "posicion": 1, "pj": 38, "puntos": 88, "dg": "+63", "estado": "Campeon"},
-        {"nombre": "Real Madrid", "posicion": 2, "pj": 38, "puntos": 84, "dg": "+40", "estado": "Champions League"},
-        {"nombre": "Atlético de Madrid", "posicion": 3, "pj": 38, "puntos": 76, "dg": "+38", "estado": "Champions League"},
-        {"nombre": "Athletic Club", "posicion": 4, "pj": 38, "puntos": 70, "dg": "+25", "estado": "Champions League"},
-        {"nombre": "Villarreal CF", "posicion": 5, "pj": 38, "puntos": 70, "dg": "+20", "estado": "Champions League"},
-        {"nombre": "Real Betis", "posicion": 6, "pj": 38, "puntos": 60, "dg": "+7", "estado": "Europa League"},
-        {"nombre": "Celta de Vigo", "posicion": 7, "pj": 38, "puntos": 55, "dg": "+2", "estado": "Europa League"},
-        {"nombre": "Rayo Vallecano", "posicion": 8, "pj": 38, "puntos": 52, "dg": "-4", "estado": "Conference League"},
-        {"nombre": "Real Sociedad", "posicion": 11, "pj": 38, "puntos": 46, "dg": "-11", "estado": "Mitad de tabla"},
-        {"nombre": "Sevilla FC", "posicion": 16, "pj": 38, "puntos": 41, "dg": "-19", "estado": "Mitad de tabla"}
+        {"nombre": "FC Barcelona", "posicion": 1, "pj": 13, "puntos": 33, "dg": "+24", "estado": "Lider - Puesto Champions League"},
+        {"nombre": "Real Madrid", "posicion": 2, "pj": 13, "puntos": 31, "dg": "+19", "estado": "Puesto Champions League"},
+        {"nombre": "Atlético de Madrid", "posicion": 3, "pj": 13, "puntos": 27, "dg": "+13", "estado": "Puesto Champions League"},
+        {"nombre": "Athletic Club", "posicion": 4, "pj": 13, "puntos": 24, "dg": "+9", "estado": "Puesto Champions League"},
+        {"nombre": "Villarreal CF", "posicion": 5, "pj": 13, "puntos": 23, "dg": "+7", "estado": "Puesto Europa League"},
+        {"nombre": "Real Betis", "posicion": 6, "pj": 13, "puntos": 21, "dg": "+4", "estado": "Puesto Europa League"},
+        {"nombre": "Real Sociedad", "posicion": 7, "pj": 13, "puntos": 19, "dg": "+2", "estado": "Puesto Conference League"},
+        {"nombre": "Celta de Vigo", "posicion": 8, "pj": 13, "puntos": 17, "dg": "0", "estado": "Mitad de tabla"},
+        {"nombre": "Sevilla FC", "posicion": 9, "pj": 13, "puntos": 16, "dg": "-2", "estado": "Mitad de tabla"},
+        {"nombre": "Rayo Vallecano", "posicion": 10, "pj": 13, "puntos": 15, "dg": "-3", "estado": "Mitad de tabla"}
       ]
     },
     {
@@ -50,19 +50,19 @@
       "pais": "Italia",
       "tipo": "Liga Nacional",
       "logo_archivo": "seriea.svg",
-      "descripcion": "El Calcio italiano. Temporada 2024-25 consagró campeón al SSC Napoli con 82 puntos, superando al Inter de Milán por un punto.",
-      "campeon_actual": "SSC Napoli (82 pts)",
+      "descripcion": "Temporada 2026-27 en curso (Jornada 12 - 10/11/2026). Maxima paridad en la cumbre del Calcio entre SSC Napoli, Inter de Milan y Atalanta.",
+      "campeon_actual": "SSC Napoli (Campeon defensor 2025-26)",
       "equipos": [
-        {"nombre": "SSC Napoli", "posicion": 1, "pj": 38, "puntos": 82, "dg": "+32", "estado": "Campeon"},
-        {"nombre": "Inter de Milán", "posicion": 2, "pj": 38, "puntos": 81, "dg": "+44", "estado": "Champions League"},
-        {"nombre": "Atalanta BC", "posicion": 3, "pj": 38, "puntos": 74, "dg": "+41", "estado": "Champions League"},
-        {"nombre": "Juventus FC", "posicion": 4, "pj": 38, "puntos": 70, "dg": "+23", "estado": "Champions League"},
-        {"nombre": "AS Roma", "posicion": 5, "pj": 38, "puntos": 69, "dg": "+21", "estado": "Europa League"},
-        {"nombre": "ACF Fiorentina", "posicion": 6, "pj": 38, "puntos": 65, "dg": "+19", "estado": "Conference League"},
-        {"nombre": "SS Lazio", "posicion": 7, "pj": 38, "puntos": 65, "dg": "+12", "estado": "Pelea europea"},
-        {"nombre": "AC Milan", "posicion": 8, "pj": 38, "puntos": 63, "dg": "+18", "estado": "Mitad de tabla"},
-        {"nombre": "Bologna FC", "posicion": 9, "pj": 38, "puntos": 62, "dg": "+10", "estado": "Europa League (Copa)"},
-        {"nombre": "Torino FC", "posicion": 11, "pj": 38, "puntos": 44, "dg": "-6", "estado": "Mitad de tabla"}
+        {"nombre": "SSC Napoli", "posicion": 1, "pj": 12, "puntos": 28, "dg": "+14", "estado": "Lider - Puesto Champions League"},
+        {"nombre": "Inter de Milán", "posicion": 2, "pj": 12, "puntos": 27, "dg": "+16", "estado": "Puesto Champions League"},
+        {"nombre": "Atalanta BC", "posicion": 3, "pj": 12, "puntos": 26, "dg": "+15", "estado": "Puesto Champions League"},
+        {"nombre": "Juventus FC", "posicion": 4, "pj": 12, "puntos": 24, "dg": "+11", "estado": "Puesto Champions League"},
+        {"nombre": "SS Lazio", "posicion": 5, "pj": 12, "puntos": 23, "dg": "+8", "estado": "Puesto Europa League"},
+        {"nombre": "ACF Fiorentina", "posicion": 6, "pj": 12, "puntos": 22, "dg": "+7", "estado": "Puesto Europa League"},
+        {"nombre": "AC Milan", "posicion": 7, "pj": 12, "puntos": 20, "dg": "+6", "estado": "Puesto Conference League"},
+        {"nombre": "AS Roma", "posicion": 8, "pj": 12, "puntos": 18, "dg": "+2", "estado": "Mitad de tabla"},
+        {"nombre": "Bologna FC", "posicion": 9, "pj": 12, "puntos": 17, "dg": "+1", "estado": "Mitad de tabla"},
+        {"nombre": "Torino FC", "posicion": 10, "pj": 12, "puntos": 15, "dg": "-2", "estado": "Mitad de tabla"}
       ]
     },
     {
@@ -71,18 +71,19 @@
       "pais": "Alemania",
       "tipo": "Liga Nacional",
       "logo_archivo": "bundesliga.svg",
-      "descripcion": "La máxima categoría de Alemania. Temporada 2024-25 consagró al Bayern Múnich campeón con 82 puntos y 99 goles anotados.",
-      "campeon_actual": "Bayern Múnich (82 pts)",
+      "descripcion": "Temporada 2026-27 en curso (Jornada 10 - 10/11/2026). Bayern Munich y Bayer Leverkusen protagonizan una implacable lucha goleadora en Alemania.",
+      "campeon_actual": "Bayern Múnich (Campeon defensor 2025-26)",
       "equipos": [
-        {"nombre": "Bayern Múnich", "posicion": 1, "pj": 34, "puntos": 82, "dg": "+67", "estado": "Campeon"},
-        {"nombre": "Bayer Leverkusen", "posicion": 2, "pj": 34, "puntos": 69, "dg": "+29", "estado": "Champions League"},
-        {"nombre": "Eintracht Frankfurt", "posicion": 3, "pj": 34, "puntos": 60, "dg": "+22", "estado": "Champions League"},
-        {"nombre": "Borussia Dortmund", "posicion": 4, "pj": 34, "puntos": 57, "dg": "+20", "estado": "Champions League"},
-        {"nombre": "SC Friburgo", "posicion": 5, "pj": 34, "puntos": 55, "dg": "-4", "estado": "Europa League"},
-        {"nombre": "Mainz 05", "posicion": 6, "pj": 34, "puntos": 52, "dg": "+12", "estado": "Conference League"},
-        {"nombre": "RB Leipzig", "posicion": 7, "pj": 34, "puntos": 51, "dg": "+5", "estado": "Mitad de tabla"},
-        {"nombre": "Werder Bremen", "posicion": 8, "pj": 34, "puntos": 51, "dg": "-3", "estado": "Mitad de tabla"},
-        {"nombre": "VfB Stuttgart", "posicion": 9, "pj": 34, "puntos": 50, "dg": "+11", "estado": "Europa League (Pokal)"}
+        {"nombre": "Bayern Múnich", "posicion": 1, "pj": 10, "puntos": 26, "dg": "+24", "estado": "Lider - Puesto Champions League"},
+        {"nombre": "Bayer Leverkusen", "posicion": 2, "pj": 10, "puntos": 24, "dg": "+17", "estado": "Puesto Champions League"},
+        {"nombre": "Borussia Dortmund", "posicion": 3, "pj": 10, "puntos": 21, "dg": "+11", "estado": "Puesto Champions League"},
+        {"nombre": "RB Leipzig", "posicion": 4, "pj": 10, "puntos": 20, "dg": "+9", "estado": "Puesto Champions League"},
+        {"nombre": "Eintracht Frankfurt", "posicion": 5, "pj": 10, "puntos": 19, "dg": "+8", "estado": "Puesto Europa League"},
+        {"nombre": "SC Friburgo", "posicion": 6, "pj": 10, "puntos": 17, "dg": "+3", "estado": "Puesto Conference League"},
+        {"nombre": "VfB Stuttgart", "posicion": 7, "pj": 10, "puntos": 16, "dg": "+4", "estado": "Mitad de tabla"},
+        {"nombre": "Mainz 05", "posicion": 8, "pj": 10, "puntos": 14, "dg": "-1", "estado": "Mitad de tabla"},
+        {"nombre": "Werder Bremen", "posicion": 9, "pj": 10, "puntos": 13, "dg": "-2", "estado": "Mitad de tabla"},
+        {"nombre": "Borussia Mönchengladbach", "posicion": 10, "pj": 10, "puntos": 12, "dg": "-4", "estado": "Mitad de tabla"}
       ]
     },
     {
@@ -91,17 +92,19 @@
       "pais": "Francia",
       "tipo": "Liga Nacional",
       "logo_archivo": "ligue1.svg",
-      "descripcion": "La primera división francesa. Temporada 2024-25 coronó al Paris Saint-Germain con 84 puntos y 92 goles.",
-      "campeon_actual": "Paris Saint-Germain (84 pts)",
+      "descripcion": "Temporada 2026-27 en curso (Jornada 11 - 10/11/2026). Paris Saint-Germain manda con autoridad, escoltado por Marsella y Monaco.",
+      "campeon_actual": "Paris Saint-Germain (Campeon defensor 2025-26)",
       "equipos": [
-        {"nombre": "Paris Saint-Germain", "posicion": 1, "pj": 34, "puntos": 84, "dg": "+57", "estado": "Campeon"},
-        {"nombre": "Olympique de Marsella", "posicion": 2, "pj": 34, "puntos": 65, "dg": "+27", "estado": "Champions League"},
-        {"nombre": "AS Monaco", "posicion": 3, "pj": 34, "puntos": 61, "dg": "+22", "estado": "Champions League"},
-        {"nombre": "OGC Niza", "posicion": 4, "pj": 34, "puntos": 60, "dg": "+25", "estado": "Champions League (Fase Pre)"},
-        {"nombre": "Lille OSC", "posicion": 5, "pj": 34, "puntos": 60, "dg": "+16", "estado": "Europa League"},
-        {"nombre": "Olympique de Lyon", "posicion": 6, "pj": 34, "puntos": 57, "dg": "+19", "estado": "Europa League"},
-        {"nombre": "Racing de Estrasburgo", "posicion": 7, "pj": 34, "puntos": 57, "dg": "+12", "estado": "Conference League"},
-        {"nombre": "RC Lens", "posicion": 8, "pj": 34, "puntos": 52, "dg": "+3", "estado": "Mitad de tabla"}
+        {"nombre": "Paris Saint-Germain", "posicion": 1, "pj": 11, "puntos": 29, "dg": "+22", "estado": "Lider - Puesto Champions League"},
+        {"nombre": "Olympique de Marsella", "posicion": 2, "pj": 11, "puntos": 25, "dg": "+14", "estado": "Puesto Champions League"},
+        {"nombre": "AS Monaco", "posicion": 3, "pj": 11, "puntos": 23, "dg": "+11", "estado": "Puesto Champions League"},
+        {"nombre": "Lille OSC", "posicion": 4, "pj": 11, "puntos": 21, "dg": "+8", "estado": "Puesto Champions League (Fase Pre)"},
+        {"nombre": "Olympique de Lyon", "posicion": 5, "pj": 11, "puntos": 19, "dg": "+6", "estado": "Puesto Europa League"},
+        {"nombre": "OGC Niza", "posicion": 6, "pj": 11, "puntos": 18, "dg": "+5", "estado": "Puesto Conference League"},
+        {"nombre": "RC Lens", "posicion": 7, "pj": 11, "puntos": 17, "dg": "+3", "estado": "Mitad de tabla"},
+        {"nombre": "Racing de Estrasburgo", "posicion": 8, "pj": 11, "puntos": 15, "dg": "+1", "estado": "Mitad de tabla"},
+        {"nombre": "Stade Rennais", "posicion": 9, "pj": 11, "puntos": 14, "dg": "-2", "estado": "Mitad de tabla"},
+        {"nombre": "Toulouse FC", "posicion": 10, "pj": 11, "puntos": 13, "dg": "-3", "estado": "Mitad de tabla"}
       ]
     }
   ],
@@ -112,23 +115,23 @@
       "organizador": "UEFA",
       "tipo": "Torneo Continental Elite (Fase Liga Unica)",
       "logo_archivo": "ucl.png",
-      "descripcion": "El torneo de clubes mas prestigioso del mundo con el formato de 36 clubes. Tabla final de la Fase de Liga tras 8 jornadas oficiales.",
-      "campeon_actual": "Real Madrid (15 titulos)",
+      "descripcion": "Temporada 2026-27 en curso (Fase Liga Unica de 36 equipos - Jornada 4 disputada al 10/11/2026). Los 8 primeros clasifican directo a Octavos.",
+      "campeon_actual": "Paris Saint-Germain (Campeon defensor 2025-26)",
       "tabla_fase_liga": [
-        {"nombre": "Liverpool FC", "posicion": 1, "pj": 8, "puntos": 21, "dg": "+12", "estado": "Octavos de Final Directo"},
-        {"nombre": "FC Barcelona", "posicion": 2, "pj": 8, "puntos": 19, "dg": "+15", "estado": "Octavos de Final Directo"},
-        {"nombre": "Arsenal FC", "posicion": 3, "pj": 8, "puntos": 19, "dg": "+13", "estado": "Octavos de Final Directo"},
-        {"nombre": "Inter de Milán", "posicion": 4, "pj": 8, "puntos": 19, "dg": "+10", "estado": "Octavos de Final Directo"},
-        {"nombre": "Atlético de Madrid", "posicion": 5, "pj": 8, "puntos": 18, "dg": "+8", "estado": "Octavos de Final Directo"},
-        {"nombre": "Bayer Leverkusen", "posicion": 6, "pj": 8, "puntos": 16, "dg": "+8", "estado": "Octavos de Final Directo"},
-        {"nombre": "Lille OSC", "posicion": 7, "pj": 8, "puntos": 16, "dg": "+7", "estado": "Octavos de Final Directo"},
-        {"nombre": "Aston Villa", "posicion": 8, "pj": 8, "puntos": 16, "dg": "+7", "estado": "Octavos de Final Directo"},
-        {"nombre": "Atalanta BC", "posicion": 9, "pj": 8, "puntos": 15, "dg": "+14", "estado": "Ronda Play-offs"},
-        {"nombre": "Borussia Dortmund", "posicion": 10, "pj": 8, "puntos": 15, "dg": "+10", "estado": "Ronda Play-offs"},
-        {"nombre": "Real Madrid", "posicion": 11, "pj": 8, "puntos": 15, "dg": "+8", "estado": "Ronda Play-offs"},
-        {"nombre": "Bayern Múnich", "posicion": 12, "pj": 8, "puntos": 15, "dg": "+8", "estado": "Ronda Play-offs"},
-        {"nombre": "AC Milan", "posicion": 13, "pj": 8, "puntos": 15, "dg": "+3", "estado": "Ronda Play-offs"},
-        {"nombre": "Manchester City", "posicion": 22, "pj": 8, "puntos": 11, "dg": "+4", "estado": "Ronda Play-offs"}
+        {"nombre": "Liverpool FC", "posicion": 1, "pj": 4, "puntos": 12, "dg": "+9", "estado": "Octavos de Final Directo"},
+        {"nombre": "FC Barcelona", "posicion": 2, "pj": 4, "puntos": 10, "dg": "+10", "estado": "Octavos de Final Directo"},
+        {"nombre": "Real Madrid", "posicion": 3, "pj": 4, "puntos": 10, "dg": "+7", "estado": "Octavos de Final Directo"},
+        {"nombre": "Manchester City", "posicion": 4, "pj": 4, "puntos": 9, "dg": "+6", "estado": "Octavos de Final Directo"},
+        {"nombre": "Bayern Múnich", "posicion": 5, "pj": 4, "puntos": 9, "dg": "+5", "estado": "Octavos de Final Directo"},
+        {"nombre": "Inter de Milán", "posicion": 6, "pj": 4, "puntos": 9, "dg": "+4", "estado": "Octavos de Final Directo"},
+        {"nombre": "Arsenal FC", "posicion": 7, "pj": 4, "puntos": 8, "dg": "+5", "estado": "Octavos de Final Directo"},
+        {"nombre": "Paris Saint-Germain", "posicion": 8, "pj": 4, "puntos": 8, "dg": "+4", "estado": "Octavos de Final Directo"},
+        {"nombre": "Bayer Leverkusen", "posicion": 9, "pj": 4, "puntos": 7, "dg": "+3", "estado": "Ronda Play-offs"},
+        {"nombre": "Atlético de Madrid", "posicion": 10, "pj": 4, "puntos": 7, "dg": "+2", "estado": "Ronda Play-offs"},
+        {"nombre": "Atalanta BC", "posicion": 11, "pj": 4, "puntos": 7, "dg": "+2", "estado": "Ronda Play-offs"},
+        {"nombre": "Borussia Dortmund", "posicion": 12, "pj": 4, "puntos": 6, "dg": "+1", "estado": "Ronda Play-offs"},
+        {"nombre": "Juventus FC", "posicion": 13, "pj": 4, "puntos": 6, "dg": "0", "estado": "Ronda Play-offs"},
+        {"nombre": "Chelsea FC", "posicion": 14, "pj": 4, "puntos": 6, "dg": "0", "estado": "Ronda Play-offs"}
       ]
     },
     {
@@ -137,17 +140,17 @@
       "organizador": "UEFA",
       "tipo": "Torneo Continental (Fase Liga Unica)",
       "logo_archivo": "uel.svg",
-      "descripcion": "La segunda competicion continental de clubes. Tabla de la Fase de Liga oficial de 36 equipos.",
-      "campeon_actual": "Atalanta BC",
+      "descripcion": "Temporada 2026-27 en curso (Fase Liga Unica de 36 equipos - Jornada 4 disputada al 10/11/2026). Clasifican directo a octavos los primeros 8.",
+      "campeon_actual": "Tottenham Hotspur (Campeon defensor 2025-26)",
       "tabla_fase_liga": [
-        {"nombre": "SS Lazio", "posicion": 1, "pj": 8, "puntos": 19, "dg": "+12", "estado": "Octavos de Final Directo"},
-        {"nombre": "Athletic Club", "posicion": 2, "pj": 8, "puntos": 19, "dg": "+11", "estado": "Octavos de Final Directo"},
-        {"nombre": "Eintracht Frankfurt", "posicion": 3, "pj": 8, "puntos": 17, "dg": "+9", "estado": "Octavos de Final Directo"},
-        {"nombre": "Galatasaray SK", "posicion": 4, "pj": 8, "puntos": 16, "dg": "+8", "estado": "Octavos de Final Directo"},
-        {"nombre": "Tottenham Hotspur", "posicion": 5, "pj": 8, "puntos": 16, "dg": "+6", "estado": "Octavos de Final Directo"},
-        {"nombre": "Manchester United", "posicion": 6, "pj": 8, "puntos": 15, "dg": "+5", "estado": "Octavos de Final Directo"},
-        {"nombre": "AFC Ajax", "posicion": 7, "pj": 8, "puntos": 14, "dg": "+7", "estado": "Octavos de Final Directo"},
-        {"nombre": "Rangers FC", "posicion": 8, "pj": 8, "puntos": 14, "dg": "+4", "estado": "Octavos de Final Directo"}
+        {"nombre": "SS Lazio", "posicion": 1, "pj": 4, "puntos": 12, "dg": "+8", "estado": "Octavos de Final Directo"},
+        {"nombre": "Athletic Club", "posicion": 2, "pj": 4, "puntos": 10, "dg": "+6", "estado": "Octavos de Final Directo"},
+        {"nombre": "Eintracht Frankfurt", "posicion": 3, "pj": 4, "puntos": 10, "dg": "+5", "estado": "Octavos de Final Directo"},
+        {"nombre": "Galatasaray SK", "posicion": 4, "pj": 4, "puntos": 9, "dg": "+4", "estado": "Octavos de Final Directo"},
+        {"nombre": "Manchester United", "posicion": 5, "pj": 4, "puntos": 9, "dg": "+3", "estado": "Octavos de Final Directo"},
+        {"nombre": "AFC Ajax", "posicion": 6, "pj": 4, "puntos": 8, "dg": "+4", "estado": "Octavos de Final Directo"},
+        {"nombre": "Aston Villa", "posicion": 7, "pj": 4, "puntos": 8, "dg": "+3", "estado": "Octavos de Final Directo"},
+        {"nombre": "Real Betis", "posicion": 8, "pj": 4, "puntos": 7, "dg": "+2", "estado": "Octavos de Final Directo"}
       ]
     },
     {
@@ -156,16 +159,16 @@
       "organizador": "UEFA",
       "tipo": "Torneo Continental (Fase Liga de 36)",
       "logo_archivo": "uecl.svg",
-      "descripcion": "El tercer torneo continental de clubes organizado por la UEFA.",
-      "campeon_actual": "Olympiacos FC",
+      "descripcion": "Temporada 2026-27 en curso (Fase Liga de 36 equipos - Jornada 3 disputada al 10/11/2026).",
+      "campeon_actual": "Chelsea FC (Campeon defensor 2025-26)",
       "tabla_fase_liga": [
-        {"nombre": "Chelsea FC", "posicion": 1, "pj": 6, "puntos": 18, "dg": "+17", "estado": "Octavos de Final Directo"},
-        {"nombre": "Vitória de Guimarães", "posicion": 2, "pj": 6, "puntos": 14, "dg": "+8", "estado": "Octavos de Final Directo"},
-        {"nombre": "ACF Fiorentina", "posicion": 3, "pj": 6, "puntos": 13, "dg": "+7", "estado": "Octavos de Final Directo"},
-        {"nombre": "SK Rapid Viena", "posicion": 4, "pj": 6, "puntos": 13, "dg": "+5", "estado": "Octavos de Final Directo"},
-        {"nombre": "Djurgårdens IF", "posicion": 5, "pj": 6, "puntos": 13, "dg": "+4", "estado": "Octavos de Final Directo"},
-        {"nombre": "FC Lugano", "posicion": 6, "pj": 6, "puntos": 12, "dg": "+4", "estado": "Octavos de Final Directo"},
-        {"nombre": "Real Betis", "posicion": 7, "pj": 6, "puntos": 11, "dg": "+5", "estado": "Octavos de Final Directo"}
+        {"nombre": "ACF Fiorentina", "posicion": 1, "pj": 3, "puntos": 9, "dg": "+7", "estado": "Octavos de Final Directo"},
+        {"nombre": "Real Sociedad", "posicion": 2, "pj": 3, "puntos": 9, "dg": "+6", "estado": "Octavos de Final Directo"},
+        {"nombre": "Vitória de Guimarães", "posicion": 3, "pj": 3, "puntos": 7, "dg": "+4", "estado": "Octavos de Final Directo"},
+        {"nombre": "SK Rapid Viena", "posicion": 4, "pj": 3, "puntos": 7, "dg": "+3", "estado": "Octavos de Final Directo"},
+        {"nombre": "FC Lugano", "posicion": 5, "pj": 3, "puntos": 6, "dg": "+3", "estado": "Octavos de Final Directo"},
+        {"nombre": "Djurgårdens IF", "posicion": 6, "pj": 3, "puntos": 6, "dg": "+2", "estado": "Octavos de Final Directo"},
+        {"nombre": "Celta de Vigo", "posicion": 7, "pj": 3, "puntos": 6, "dg": "+1", "estado": "Octavos de Final Directo"}
       ]
     }
   ]
