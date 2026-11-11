@@ -1,0 +1,154 @@
+{
+  "version": 1,
+  "ligas": [
+    {
+      "id": "pl",
+      "nombre": "Premier League",
+      "pais": "Inglaterra",
+      "tipo": "Liga Nacional",
+      "logo_url": "https://upload.wikimedia.org/wikipedia/en/f/f2/Premier_League_Logo.svg",
+      "descripcion": "La máxima categoría del sistema de ligas de fútbol de Inglaterra, conocida por su alta intensidad y competitividad económica.",
+      "campeon_actual": "Manchester City",
+      "equipos": [
+        {"nombre": "Liverpool FC", "posicion": 1, "pj": 28, "puntos": 67, "dg": "+41", "estado": "Pelea por el título"},
+        {"nombre": "Arsenal FC", "posicion": 2, "pj": 28, "puntos": 62, "dg": "+36", "estado": "Pelea por el título"},
+        {"nombre": "Manchester City", "posicion": 3, "pj": 28, "puntos": 59, "dg": "+32", "estado": "Zona Champions"},
+        {"nombre": "Chelsea FC", "posicion": 4, "pj": 28, "puntos": 51, "dg": "+18", "estado": "Zona Champions"},
+        {"nombre": "Newcastle United", "posicion": 5, "pj": 28, "puntos": 48, "dg": "+14", "estado": "Zona Europa League"},
+        {"nombre": "Aston Villa", "posicion": 6, "pj": 28, "puntos": 47, "dg": "+8", "estado": "Zona Conference"},
+        {"nombre": "Tottenham Hotspur", "posicion": 7, "pj": 28, "puntos": 43, "dg": "+6", "estado": "Mitad de tabla"},
+        {"nombre": "Manchester United", "posicion": 8, "pj": 28, "puntos": 41, "dg": "-2", "estado": "Mitad de tabla"}
+      ]
+    },
+    {
+      "id": "laliga",
+      "nombre": "LaLiga EA Sports",
+      "pais": "España",
+      "tipo": "Liga Nacional",
+      "logo_url": "https://upload.wikimedia.org/wikipedia/commons/0/0f/LaLiga_EA_Sports_2023_Vertical_Logo.svg",
+      "descripcion": "La primera división de España, cuna de los clásicos mundiales y del fútbol técnico de posesión.",
+      "campeon_actual": "Real Madrid",
+      "equipos": [
+        {"nombre": "FC Barcelona", "posicion": 1, "pj": 27, "puntos": 65, "dg": "+45", "estado": "Líder en racha"},
+        {"nombre": "Real Madrid", "posicion": 2, "pj": 27, "puntos": 63, "dg": "+38", "estado": "Pelea por el título"},
+        {"nombre": "Atlético de Madrid", "posicion": 3, "pj": 27, "puntos": 58, "dg": "+26", "estado": "Zona Champions"},
+        {"nombre": "Athletic Club", "posicion": 4, "pj": 27, "puntos": 49, "dg": "+17", "estado": "Zona Champions"},
+        {"nombre": "Villarreal CF", "posicion": 5, "pj": 27, "puntos": 46, "dg": "+12", "estado": "Zona Europa League"},
+        {"nombre": "Real Betis", "posicion": 6, "pj": 27, "puntos": 42, "dg": "+5", "estado": "Zona Conference"},
+        {"nombre": "Real Sociedad", "posicion": 7, "pj": 27, "puntos": 39, "dg": "+2", "estado": "Mitad de tabla"}
+      ]
+    },
+    {
+      "id": "seriea",
+      "nombre": "Serie A Enilive",
+      "pais": "Italia",
+      "tipo": "Liga Nacional",
+      "logo_url": "https://upload.wikimedia.org/wikipedia/commons/e/e9/Serie_A_logo_2019.svg",
+      "descripcion": "El Calcio italiano: fútbol táctico, tradición defensiva y equilibrio competitivo histórico.",
+      "campeon_actual": "Inter de Milán",
+      "equipos": [
+        {"nombre": "Inter de Milán", "posicion": 1, "pj": 28, "puntos": 66, "dg": "+42", "estado": "Líder sólido"},
+        {"nombre": "SSC Napoli", "posicion": 2, "pj": 28, "puntos": 62, "dg": "+28", "estado": "Pelea por el título"},
+        {"nombre": "Atalanta BC", "posicion": 3, "pj": 28, "puntos": 58, "dg": "+33", "estado": "Zona Champions"},
+        {"nombre": "Juventus FC", "posicion": 4, "pj": 28, "puntos": 54, "dg": "+21", "estado": "Zona Champions"},
+        {"nombre": "SS Lazio", "posicion": 5, "pj": 28, "puntos": 51, "dg": "+15", "estado": "Zona Europa League"},
+        {"nombre": "AC Milan", "posicion": 6, "pj": 28, "puntos": 48, "dg": "+11", "estado": "Zona Conference"},
+        {"nombre": "AS Roma", "posicion": 7, "pj": 28, "puntos": 44, "dg": "+7", "estado": "Mitad de tabla"},
+        {"nombre": "ACF Fiorentina", "posicion": 8, "pj": 28, "puntos": 43, "dg": "+5", "estado": "Mitad de tabla"}
+      ]
+    },
+    {
+      "id": "bundesliga",
+      "nombre": "Bundesliga",
+      "pais": "Alemania",
+      "tipo": "Liga Nacional",
+      "logo_url": "https://upload.wikimedia.org/wikipedia/en/d/df/Bundesliga_logo_%282017%29.svg",
+      "descripcion": "La liga alemana caracterizada por estadios llenos, transiciones vertiginosas y alto promedio de goles por partido.",
+      "campeon_actual": "Bayer Leverkusen",
+      "equipos": [
+        {"nombre": "Bayern Múnich", "posicion": 1, "pj": 25, "puntos": 62, "dg": "+49", "estado": "Líder destacado"},
+        {"nombre": "Bayer Leverkusen", "posicion": 2, "pj": 25, "puntos": 56, "dg": "+31", "estado": "Escolta"},
+        {"nombre": "RB Leipzig", "posicion": 3, "pj": 25, "puntos": 49, "dg": "+22", "estado": "Zona Champions"},
+        {"nombre": "Eintracht Frankfurt", "posicion": 4, "pj": 25, "puntos": 46, "dg": "+16", "estado": "Zona Champions"},
+        {"nombre": "Borussia Dortmund", "posicion": 5, "pj": 25, "puntos": 43, "dg": "+14", "estado": "Zona Europa League"},
+        {"nombre": "VfB Stuttgart", "posicion": 6, "pj": 25, "puntos": 40, "dg": "+9", "estado": "Zona Conference"}
+      ]
+    },
+    {
+      "id": "ligue1",
+      "nombre": "Ligue 1 McDonald's",
+      "pais": "Francia",
+      "tipo": "Liga Nacional",
+      "logo_url": "https://upload.wikimedia.org/wikipedia/commons/5/5e/Ligue1_logo.svg",
+      "descripcion": "La máxima categoría del fútbol francés, gran semillero de jóvenes talentos y dominio de la capital parisina.",
+      "campeon_actual": "Paris Saint-Germain",
+      "equipos": [
+        {"nombre": "Paris Saint-Germain", "posicion": 1, "pj": 25, "puntos": 64, "dg": "+46", "estado": "Líder invicto"},
+        {"nombre": "AS Monaco", "posicion": 2, "pj": 25, "puntos": 50, "dg": "+22", "estado": "Zona Champions"},
+        {"nombre": "Olympique de Marsella", "posicion": 3, "pj": 25, "puntos": 48, "dg": "+19", "estado": "Zona Champions"},
+        {"nombre": "Lille OSC", "posicion": 4, "pj": 25, "puntos": 45, "dg": "+15", "estado": "Zona Champions (Pre)"},
+        {"nombre": "Olympique de Lyon", "posicion": 5, "pj": 25, "puntos": 42, "dg": "+11", "estado": "Zona Europa League"},
+        {"nombre": "OGC Niza", "posicion": 6, "pj": 25, "puntos": 38, "dg": "+7", "estado": "Zona Conference"}
+      ]
+    }
+  ],
+  "competiciones_europeas": [
+    {
+      "id": "ucl",
+      "nombre": "UEFA Champions League",
+      "organizador": "UEFA",
+      "tipo": "Torneo Continental Elite",
+      "logo_url": "https://upload.wikimedia.org/wikipedia/commons/f/f3/UEFA_Champions_League_logo_2.svg",
+      "descripcion": "El torneo de clubes más prestigioso del planeta fútbol. Estrena el formato de liga única de 36 equipos.",
+      "campeon_actual": "Real Madrid (15 títulos)",
+      "tabla_fase_liga": [
+        {"nombre": "Liverpool FC", "posicion": 1, "pj": 8, "puntos": 21, "dg": "+14", "estado": "Octavos Directos"},
+        {"nombre": "FC Barcelona", "posicion": 2, "pj": 8, "puntos": 19, "dg": "+15", "estado": "Octavos Directos"},
+        {"nombre": "Arsenal FC", "posicion": 3, "pj": 8, "puntos": 19, "dg": "+11", "estado": "Octavos Directos"},
+        {"nombre": "Inter de Milán", "posicion": 4, "pj": 8, "puntos": 19, "dg": "+10", "estado": "Octavos Directos"},
+        {"nombre": "Atlético de Madrid", "posicion": 5, "pj": 8, "puntos": 18, "dg": "+8", "estado": "Octavos Directos"},
+        {"nombre": "Bayer Leverkusen", "posicion": 6, "pj": 8, "puntos": 16, "dg": "+7", "estado": "Octavos Directos"},
+        {"nombre": "Real Madrid", "posicion": 7, "pj": 8, "puntos": 15, "dg": "+6", "estado": "Octavos Directos"},
+        {"nombre": "Bayern Múnich", "posicion": 8, "pj": 8, "puntos": 15, "dg": "+5", "estado": "Octavos Directos"},
+        {"nombre": "Manchester City", "posicion": 9, "pj": 8, "puntos": 14, "dg": "+6", "estado": "Ronda Play-offs"}
+      ]
+    },
+    {
+      "id": "uel",
+      "nombre": "UEFA Europa League",
+      "organizador": "UEFA",
+      "tipo": "Torneo Continental",
+      "logo_url": "https://upload.wikimedia.org/wikipedia/commons/0/03/UEFA_Europa_League_logo_%282024%29.svg",
+      "descripcion": "El segundo torneo continental más relevante de Europa, con equipos tradicionales y batallas de alto nivel.",
+      "campeon_actual": "Atalanta BC",
+      "tabla_fase_liga": [
+        {"nombre": "SS Lazio", "posicion": 1, "pj": 8, "puntos": 19, "dg": "+12", "estado": "Octavos Directos"},
+        {"nombre": "Athletic Club", "posicion": 2, "pj": 8, "puntos": 19, "dg": "+11", "estado": "Octavos Directos"},
+        {"nombre": "Eintracht Frankfurt", "posicion": 3, "pj": 8, "puntos": 17, "dg": "+9", "estado": "Octavos Directos"},
+        {"nombre": "Galatasaray SK", "posicion": 4, "pj": 8, "puntos": 16, "dg": "+8", "estado": "Octavos Directos"},
+        {"nombre": "Tottenham Hotspur", "posicion": 5, "pj": 8, "puntos": 16, "dg": "+6", "estado": "Octavos Directos"},
+        {"nombre": "Manchester United", "posicion": 6, "pj": 8, "puntos": 15, "dg": "+5", "estado": "Octavos Directos"},
+        {"nombre": "AFC Ajax", "posicion": 7, "pj": 8, "puntos": 14, "dg": "+7", "estado": "Octavos Directos"},
+        {"nombre": "Rangers FC", "posicion": 8, "pj": 8, "puntos": 14, "dg": "+4", "estado": "Octavos Directos"}
+      ]
+    },
+    {
+      "id": "uecl",
+      "nombre": "UEFA Conference League",
+      "organizador": "UEFA",
+      "tipo": "Torneo Continental",
+      "logo_url": "https://upload.wikimedia.org/wikipedia/commons/8/8c/UEFA_Europa_Conference_League_logo_%282021%29.svg",
+      "descripcion": "La tercera competición europea de clubes de la UEFA, con oportunidades para clubes emergentes de todo el continente.",
+      "campeon_actual": "Olympiacos FC",
+      "tabla_fase_liga": [
+        {"nombre": "Chelsea FC", "posicion": 1, "pj": 6, "puntos": 18, "dg": "+17", "estado": "Octavos Directos"},
+        {"nombre": "Vitória de Guimarães", "posicion": 2, "pj": 6, "puntos": 14, "dg": "+8", "estado": "Octavos Directos"},
+        {"nombre": "ACF Fiorentina", "posicion": 3, "pj": 6, "puntos": 13, "dg": "+7", "estado": "Octavos Directos"},
+        {"nombre": "SK Rapid Viena", "posicion": 4, "pj": 6, "puntos": 13, "dg": "+5", "estado": "Octavos Directos"},
+        {"nombre": "Djurgårdens IF", "posicion": 5, "pj": 6, "puntos": 13, "dg": "+4", "estado": "Octavos Directos"},
+        {"nombre": "FC Lugano", "posicion": 6, "pj": 6, "puntos": 12, "dg": "+4", "estado": "Octavos Directos"},
+        {"nombre": "Real Betis", "posicion": 7, "pj": 6, "puntos": 11, "dg": "+5", "estado": "Octavos Directos"}
+      ]
+    }
+  ]
+}

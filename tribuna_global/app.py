@@ -24,8 +24,10 @@ if str(BASE_DIR) not in sys.path:
 from almacenamiento import (
     ArchivoOpinionesCorruptoError,
     ErrorCatalogoJugadores,
+    RUTA_COMPETICIONES,
     RUTA_JUGADORES,
     RUTA_OPINIONES,
+    cargar_competiciones,
     cargar_jugadores,
     cargar_opiniones,
     consultar_opiniones,
@@ -548,6 +550,89 @@ def renderizar_seccion_consultar(
     )
 
 
+def renderizar_seccion_competiciones() -> None:
+    """Muestra el análisis y tablas de las 5 Grandes Ligas y Competiciones Europeas (UCL, UEL, UECL)."""
+    st.subheader("🌍 Grandes Ligas Europeas & Torneos UEFA")
+    st.caption("Tablas de posiciones, campeones vigentes y estatus competitivo para análisis y futura conexión con APIs en vivo.")
+
+    datos_comp = cargar_competiciones(RUTA_COMPETICIONES)
+    ligas = datos_comp.get("ligas", [])
+    torneos_uefa = datos_comp.get("competiciones_europeas", [])
+
+    pestana_ligas, pestana_uefa = st.tabs(["🏆 5 Grandes Ligas", "⭐ Competiciones Europeas (UCL / UEL / UECL)"])
+
+    with pestana_ligas:
+        nombres_ligas = [l["nombre"] for l in ligas]
+        mapa_ligas = {l["nombre"]: l for l in ligas}
+
+        liga_elegida = st.selectbox("Selecciona una Liga", options=nombres_ligas, index=0)
+        info_liga = mapa_ligas[liga_elegida]
+
+        col_logo, col_desc = st.columns([1, 4])
+        with col_logo:
+            if info_liga.get("logo_url"):
+                st.image(info_liga["logo_url"], width=130)
+        with col_desc:
+            st.markdown(f"### {info_liga['nombre']} ({info_liga['pais']})")
+            st.markdown(f"**Campeón Vigente:** 🏆 {info_liga.get('campeon_actual', 'Por definir')}")
+            st.write(info_liga.get("descripcion", ""))
+
+        st.markdown(f"#### 📊 Tabla de Posiciones y Zona de Clasificación")
+        equipos = info_liga.get("equipos", [])
+        if equipos:
+            df_equipos = pd.DataFrame(equipos)
+            df_equipos.columns = ["Equipo", "Posición", "Partidos Jugados (PJ)", "Puntos", "Diferencia de Gol (DG)", "Estado"]
+            st.dataframe(df_equipos, width="stretch", hide_index=True)
+
+            # Gráfica de Puntos por Equipo
+            fig_pts = px.bar(
+                df_equipos,
+                x="Equipo",
+                y="Puntos",
+                color="Puntos",
+                text="Puntos",
+                title=f"Puntaje Actual - {info_liga['nombre']}",
+                color_continuous_scale="Viridis",
+            )
+            fig_pts.update_layout(height=380, margin=dict(l=20, r=20, t=40, b=20))
+            st.plotly_chart(fig_pts, use_container_width=True)
+
+    with pestana_uefa:
+        nombres_uefa = [u["nombre"] for u in torneos_uefa]
+        mapa_uefa = {u["nombre"]: u for u in torneos_uefa}
+
+        torneo_elegido = st.selectbox("Selecciona Competición Continental", options=nombres_uefa, index=0)
+        info_torneo = mapa_uefa[torneo_elegido]
+
+        col_logo_u, col_desc_u = st.columns([1, 4])
+        with col_logo_u:
+            if info_torneo.get("logo_url"):
+                st.image(info_torneo["logo_url"], width=130)
+        with col_desc_u:
+            st.markdown(f"### {info_torneo['nombre']}")
+            st.markdown(f"**Campeón Actual:** 🏆 {info_torneo.get('campeon_actual', '')} &nbsp;|&nbsp; **Formato:** {info_torneo.get('tipo', '')}")
+            st.write(info_torneo.get("descripcion", ""))
+
+        st.markdown(f"#### 🌟 Tabla de la Fase de Liga Única")
+        tabla_fase = info_torneo.get("tabla_fase_liga", [])
+        if tabla_fase:
+            df_uefa = pd.DataFrame(tabla_fase)
+            df_uefa.columns = ["Club", "Posición", "Partidos Jugados (PJ)", "Puntos", "Diferencia de Gol (DG)", "Zona"]
+            st.dataframe(df_uefa, width="stretch", hide_index=True)
+
+            fig_uefa = px.bar(
+                df_uefa,
+                x="Club",
+                y="Puntos",
+                color="Puntos",
+                text="Puntos",
+                title=f"Clasificación Fase de Liga - {info_torneo['nombre']}",
+                color_continuous_scale="Plasma",
+            )
+            fig_uefa.update_layout(height=380, margin=dict(l=20, r=20, t=40, b=20))
+            st.plotly_chart(fig_uefa, use_container_width=True)
+
+
 def main() -> None:
     """Punto de entrada principal de la aplicación Streamlit."""
     st.set_page_config(
@@ -581,7 +666,8 @@ def main() -> None:
                 "Emitir opinión",
                 "Consultar opiniones",
                 "Ficha y Trayectoria",
-                "Comparador de Carreras"
+                "Comparador de Carreras",
+                "Grandes Ligas & UEFA"
             ],
             index=0,
         )
@@ -613,6 +699,8 @@ def main() -> None:
         renderizar_seccion_ficha_estadisticas(jugador_seleccionado)
     elif seccion_activa == "Comparador de Carreras":
         renderizar_seccion_comparacion(catalogo_jugadores)
+    elif seccion_activa == "Grandes Ligas & UEFA":
+        renderizar_seccion_competiciones()
 
 
 if __name__ == "__main__":

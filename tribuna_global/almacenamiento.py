@@ -18,6 +18,7 @@ BASE_DIR = Path(__file__).resolve().parent
 DATOS_DIR = BASE_DIR / "datos"
 RUTA_JUGADORES = DATOS_DIR / "jugadores.json"
 RUTA_OPINIONES = DATOS_DIR / "opiniones.json"
+RUTA_COMPETICIONES = DATOS_DIR / "competiciones.json"
 
 SENTIMIENTOS_VALIDOS = {"positivo", "negativo", "neutro", "mixto"}
 CAMPOS_REGISTRO_REQUERIDOS = {
@@ -328,4 +329,17 @@ def consultar_opiniones(
         resultado.append(reg)
 
     return resultado
+
+
+def cargar_competiciones(ruta: str | Path = RUTA_COMPETICIONES) -> dict[str, Any]:
+    """Carga la estructura de las 5 grandes ligas y los 3 torneos continentales europeos."""
+    ruta_path = Path(ruta)
+    if not ruta_path.exists():
+        return {"version": 1, "ligas": [], "competiciones_europeas": []}
+    try:
+        contenido = ruta_path.read_text(encoding="utf-8")
+        return json.loads(contenido)
+    except Exception:
+        return {"version": 1, "ligas": [], "competiciones_europeas": []}
+
 
