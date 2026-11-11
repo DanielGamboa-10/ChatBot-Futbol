@@ -253,6 +253,50 @@
       "razon": "El comentario expresa una valoración desfavorable hacia Cristiano Ronaldo al considerarlo inferior en la comparación.",
       "modelo": "gpt-4o-mini",
       "version_prompt": "1.0"
+    },
+    {
+      "id": "a88ed8dd-29c3-49a2-901a-40b844b88cd3",
+      "fecha_utc": "2026-11-11T02:35:40+00:00",
+      "jugador_id": "j009",
+      "jugador_nombre": "Luka Modrić",
+      "opinion_original": "Luka es mediocampista generacional",
+      "sentimiento": "neutro",
+      "razon": "El comentario presenta una descripción o afirmación sobre Luka Modrić sin emitir elogios ni críticas relevantes.",
+      "modelo": "gpt-4o-mini",
+      "version_prompt": "1.0"
+    },
+    {
+      "id": "412a9975-7c5b-4be0-a830-c8da756200cf",
+      "fecha_utc": "2026-11-11T02:36:06+00:00",
+      "jugador_id": "j009",
+      "jugador_nombre": "Luka Modrić",
+      "opinion_original": "Jugador con un control de balon impecable y pases que imponian elegancia y peligro",
+      "sentimiento": "neutro",
+      "razon": "El comentario presenta una descripción o afirmación sobre Luka Modrić sin emitir elogios ni críticas relevantes.",
+      "modelo": "gpt-4o-mini",
+      "version_prompt": "1.0"
+    },
+    {
+      "id": "285a78e1-1292-4d71-bacc-e695d569abad",
+      "fecha_utc": "2026-11-11T02:36:18+00:00",
+      "jugador_id": "j009",
+      "jugador_nombre": "Luka Modrić",
+      "opinion_original": "luka te amo",
+      "sentimiento": "neutro",
+      "razon": "El comentario presenta una descripción o afirmación sobre Luka Modrić sin emitir elogios ni críticas relevantes.",
+      "modelo": "gpt-4o-mini",
+      "version_prompt": "1.0"
+    },
+    {
+      "id": "e20c9ee9-d66e-42a1-aa3a-dd067a8d95da",
+      "fecha_utc": "2026-11-11T02:36:29+00:00",
+      "jugador_id": "j009",
+      "jugador_nombre": "Luka Modrić",
+      "opinion_original": "luka es mucho peor que neymar",
+      "sentimiento": "negativo",
+      "razon": "El comentario manifiesta una crítica o valoración desfavorable sobre el rendimiento de Luka Modrić.",
+      "modelo": "gpt-4o-mini",
+      "version_prompt": "1.0"
     }
   ]
 }
