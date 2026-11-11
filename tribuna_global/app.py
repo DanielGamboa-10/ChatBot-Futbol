@@ -1,8 +1,8 @@
 """Interfaz de usuario en Streamlit para Tribuna Global.
 
-Permite seleccionar un futbolista del catálogo, emitir opiniones analizadas con
-LangChain (salida estructurada Pydantic) y consultar/descargar los registros
-persistidos en disco sin invocar nuevamente al modelo.
+Permite seleccionar un futbolista del catálogo enriquecido (con fotos y estadísticas),
+emitir opiniones analizadas con LangChain (salida estructurada Pydantic), consultar/descargar
+registros persistidos, ver fichas técnicas interactivas y comparar carreras con gráficas.
 """
 
 from __future__ import annotations
@@ -12,6 +12,9 @@ from pathlib import Path
 import sys
 from typing import Any
 
+import pandas as pd
+import plotly.express as px
+import plotly.graph_objects as go
 import streamlit as st
 
 BASE_DIR = Path(__file__).resolve().parent
@@ -63,7 +66,7 @@ def limpiar_conversacion() -> None:
     st.session_state["opinion_recuperable"] = None
 
 
-def procesar_envio_opinion(jugador_capturado: dict[str, str], texto_entrada: str) -> None:
+def procesar_envio_opinion(jugador_capturado: dict[str, Any], texto_entrada: str) -> None:
     """Valida, clasifica y persiste una opinión asociándola al jugador capturado al enviar."""
     st.session_state["ultimo_error"] = None
     st.session_state["opinion_recuperable"] = None
@@ -188,20 +191,44 @@ def procesar_envio_opinion(jugador_capturado: dict[str, str], texto_entrada: str
     )
 
 
-def renderizar_seccion_emitir(jugador_seleccionado: dict[str, str]) -> None:
-    """Renderiza el chat de emisión de opiniones y su historial de sesión."""
+def renderizar_tarjeta_jugador(jugador: dict[str, Any]) -> None:
+    """Muestra una tarjeta enriquecida con foto real, apodo, posición y estadísticas clave."""
+    col_img, col_datos = st.columns([1, 3])
+    with col_img:
+        foto = jugador.get("foto_url")
+        if foto:
+            st.image(foto, width=170, caption=jugador.get("nombre"))
+        else:
+            st.info("⚽ Foto no disponible")
+
+    with col_datos:
+        apodo = f" *«{jugador['apodo']}»*" if jugador.get("apodo") else ""
+        st.markdown(f"### {jugador['nombre']}{apodo}")
+        st.markdown(f"📍 **País:** {jugador.get('pais')} &nbsp;&nbsp;|&nbsp;&nbsp; 🏃 **Posición:** {jugador.get('posicion', 'Futbolista')}")
+
+        m1, m2, m3, m4, m5 = st.columns(5)
+        m1.metric("🏟️ Partidos", jugador.get("partidos", 0))
+        m2.metric("⚽ Goles", jugador.get("goles", 0))
+        m3.metric("🎯 Asistencias", jugador.get("asistencias", 0))
+        m4.metric("🏆 Títulos", jugador.get("titulos", 0))
+        b_oro = jugador.get("balones_de_oro", 0)
+        m5.metric("🥇 Balones de Oro", b_oro if b_oro > 0 else "—")
+
+
+def renderizar_seccion_emitir(jugador_seleccionado: dict[str, Any]) -> None:
+    """Renderiza el chat de emisión de opiniones, tarjeta del jugador y su historial de sesión."""
+    renderizar_tarjeta_jugador(jugador_seleccionado)
+    st.divider()
+
     st.subheader("💬 Emitir opinión")
     st.caption(
-        f"Futbolista seleccionado actualmente: **{jugador_seleccionado['nombre']} ({jugador_seleccionado['pais']})** "
-        f"— Código interno: `{jugador_seleccionado['id']}`. "
-        "Cada envío se evalúa de manera independiente sin mezclar mensajes anteriores."
+        f"Evaluando actualmente a: **{jugador_seleccionado['nombre']} ({jugador_seleccionado['pais']})** "
+        f"— Código: `{jugador_seleccionado['id']}`. Cada opinión se analiza de forma independiente."
     )
 
-    # Mostrar historial de la sesión actual
     if not st.session_state["historial_chat"]:
         st.info(
-            "Aún no has enviado opiniones en esta sesión. Selecciona un futbolista en la barra lateral "
-            "y escribe tu comentario abajo (entre 5 y 1000 caracteres)."
+            "Escribe abajo tu opinión o valoración sobre este futbolista (entre 5 y 1000 caracteres)."
         )
 
     for item in st.session_state["historial_chat"]:
@@ -258,15 +285,154 @@ def renderizar_seccion_emitir(jugador_seleccionado: dict[str, str]) -> None:
         f"Escribe tu opinión sobre {jugador_seleccionado['nombre']} (5 a 1000 caracteres)..."
     )
     if texto_usuario is not None:
-        # Capturamos una copia inmutable del jugador seleccionado en el instante del envío
         jugador_capturado = dict(jugador_seleccionado)
         procesar_envio_opinion(jugador_capturado, texto_usuario)
         st.rerun()
 
 
+def renderizar_seccion_ficha_estadisticas(jugador: dict[str, Any]) -> None:
+    """Muestra la ficha técnica detallada: clubes, goles, asistencias y gráfica de carrera."""
+    st.subheader(f"📊 Ficha Técnica y Trayectoria: {jugador['nombre']}")
+    renderizar_tarjeta_jugador(jugador)
+
+    col_tray, col_logros = st.columns([3, 2])
+
+    with col_tray:
+        st.markdown("#### 🏟️ Trayectoria por Clubes y Selección")
+        trayectoria = jugador.get("trayectoria", [])
+        if trayectoria:
+            df_tray = pd.DataFrame(trayectoria)
+            df_tray.columns = ["Club / Selección", "Período", "Partidos", "Goles"]
+            df_tray["Promedio (Gol/PJ)"] = (df_tray["Goles"] / df_tray["Partidos"]).round(2)
+            st.dataframe(df_tray, width="stretch", hide_index=True)
+
+            # Gráfica de barras de goles por etapa
+            fig_goles = px.bar(
+                df_tray,
+                x="Club / Selección",
+                y="Goles",
+                color="Goles",
+                text="Goles",
+                title=f"Distribución de Goles de {jugador['nombre']} por Club / Selección",
+                color_continuous_scale="Blues",
+            )
+            fig_goles.update_layout(height=350, margin=dict(l=20, r=20, t=40, b=20))
+            st.plotly_chart(fig_goles, use_container_width=True)
+        else:
+            st.info("Información de clubes no detallada.")
+
+    with col_logros:
+        st.markdown("#### 🏆 Palmarés y Logros Destacados")
+        logros = jugador.get("logros", [])
+        if logros:
+            for l in logros:
+                st.markdown(f"- 🏅 **{l}**")
+        else:
+            st.write("Sin logros registrados.")
+
+        # Métricas de efectividad de carrera
+        st.markdown("#### 📈 Ratios de Efectividad Global")
+        partidos = jugador.get("partidos", 1) or 1
+        goles = jugador.get("goles", 0)
+        asist = jugador.get("asistencias", 0)
+
+        prom_gol = round(goles / partidos, 2)
+        participaciones = goles + asist
+        prom_part = round(participaciones / partidos, 2)
+
+        st.metric("Promedio Goleador Global", f"{prom_gol} goles/partido")
+        st.metric("Goles + Asistencias (G/A)", f"{participaciones} totales ({prom_part} por partido)")
+
+
+def renderizar_seccion_comparacion(catalogo: list[dict[str, Any]]) -> None:
+    """Permite seleccionar dos futbolistas y comparar sus estadísticas y gráficas de carrera."""
+    st.subheader("⚔️ Comparador Histórico de Carreras")
+    st.caption("Selecciona dos futbolistas del catálogo para comparar números reales, palmarés y promedios.")
+
+    nombres = [j["nombre"] for j in catalogo]
+    mapa = {j["nombre"]: j for j in catalogo}
+
+    col_s1, col_s2 = st.columns(2)
+    with col_s1:
+        j1_nombre = st.selectbox("Primer Futbolista", options=nombres, index=0, key="comp_j1")
+    with col_s2:
+        j2_nombre = st.selectbox("Segundo Futbolista", options=nombres, index=1 if len(nombres) > 1 else 0, key="comp_j2")
+
+    j1 = mapa[j1_nombre]
+    j2 = mapa[j2_nombre]
+
+    # Cabeceras con fotos
+    c_img1, c_vs, c_img2 = st.columns([2, 1, 2])
+    with c_img1:
+        if j1.get("foto_url"):
+            st.image(j1["foto_url"], width=160, caption=f"{j1['nombre']} ({j1['pais']})")
+        st.markdown(f"**{j1['nombre']}** — *{j1.get('posicion', '')}*")
+    with c_vs:
+        st.markdown("<h1 style='text-align: center; padding-top: 30px;'>VS</h1>", unsafe_allow_html=True)
+    with c_img2:
+        if j2.get("foto_url"):
+            st.image(j2["foto_url"], width=160, caption=f"{j2['nombre']} ({j2['pais']})")
+        st.markdown(f"**{j2['nombre']}** — *{j2.get('posicion', '')}*")
+
+    st.divider()
+
+    # Tabla comparativa de métricas
+    p1, p2 = j1.get("partidos", 1) or 1, j2.get("partidos", 1) or 1
+    g1, g2 = j1.get("goles", 0), j2.get("goles", 0)
+    a1, a2 = j1.get("asistencias", 0), j2.get("asistencias", 0)
+    t1, t2 = j1.get("titulos", 0), j2.get("titulos", 0)
+    b1, b2 = j1.get("balones_de_oro", 0), j2.get("balones_de_oro", 0)
+
+    prom1 = round(g1 / p1, 2)
+    prom2 = round(g2 / p2, 2)
+
+    df_comp = pd.DataFrame({
+        "Estadística": [
+            "Partidos Oficiales",
+            "Goles Totales",
+            "Asistencias",
+            "Goles + Asistencias (G/A)",
+            "Promedio Goleador (Gol/PJ)",
+            "Títulos Oficiales",
+            "Balones de Oro"
+        ],
+        j1["nombre"]: [p1, g1, a1, g1 + a1, prom1, t1, b1],
+        j2["nombre"]: [p2, g2, a2, g2 + a2, prom2, t2, b2],
+    })
+    st.markdown("#### 📋 Cara a Cara Numérico")
+    st.dataframe(df_comp, width="stretch", hide_index=True)
+
+    # Gráfica de barras comparativa
+    st.markdown("#### 📊 Gráfica Comparativa de Producción Ofensiva")
+    metricas = ["Goles", "Asistencias", "Títulos", "Balones de Oro"]
+    fig_comp = go.Figure(data=[
+        go.Bar(name=j1["nombre"], x=metricas, y=[g1, a1, t1, b1], marker_color="#1E88E5"),
+        go.Bar(name=j2["nombre"], x=metricas, y=[g2, a2, t2, b2], marker_color="#D81B60")
+    ])
+    fig_comp.update_layout(barmode="group", height=400, margin=dict(l=20, r=20, t=30, b=20))
+    st.plotly_chart(fig_comp, use_container_width=True)
+
+    # Gráfica de Radar de Perfil
+    st.markdown("#### 🕸️ Radar de Rendimiento")
+    categorias_radar = ["Goles", "Asistencias", "Títulos", "Balones de Oro", "Promedio x100"]
+    r1 = [g1, a1, t1 * 10, b1 * 50, prom1 * 500]
+    r2 = [g2, a2, t2 * 10, b2 * 50, prom2 * 500]
+
+    fig_radar = go.Figure()
+    fig_radar.add_trace(go.Scatterpolar(r=r1, theta=categorias_radar, fill="toself", name=j1["nombre"], line_color="#1E88E5"))
+    fig_radar.add_trace(go.Scatterpolar(r=r2, theta=categorias_radar, fill="toself", name=j2["nombre"], line_color="#D81B60"))
+    fig_radar.update_layout(
+        polar=dict(radialaxis=dict(visible=True)),
+        showlegend=True,
+        height=450,
+        margin=dict(l=40, r=40, t=30, b=30),
+    )
+    st.plotly_chart(fig_radar, use_container_width=True)
+
+
 def renderizar_seccion_consultar(
-    catalogo_jugadores: list[dict[str, str]],
-    mapa_jugadores: dict[str, dict[str, str]],
+    catalogo_jugadores: list[dict[str, Any]],
+    mapa_jugadores: dict[str, dict[str, Any]],
 ) -> None:
     """Renderiza la consulta filtrada, recuentos y descarga JSON sin llamar al modelo."""
     st.subheader("🔎 Consultar opiniones registradas")
@@ -385,16 +551,16 @@ def renderizar_seccion_consultar(
 def main() -> None:
     """Punto de entrada principal de la aplicación Streamlit."""
     st.set_page_config(
-        page_title="Tribuna Global | Percepción de Futbolistas",
+        page_title="Tribuna Global | Percepción y Estadísticas de Futbolistas",
         page_icon="⚽",
         layout="wide",
     )
     inicializar_estado_sesion()
 
-    st.title("⚽ Tribuna Global")
+    st.title("⚽ Tribuna Global: Hub de Fútbol & IA")
     st.markdown(
-        "Sistema de registro y análisis de percepción de aficionados sobre futbolistas "
-        "mediante **LangChain** y salida estructurada."
+        "Sistema integral de análisis de percepción mediante **LangChain** y **Pydantic**, "
+        "con estadísticas históricas reales, fichas de carrera y comparativas gráficas cara a cara."
     )
 
     try:
@@ -407,18 +573,23 @@ def main() -> None:
     ids_jugadores = [j["id"] for j in catalogo_jugadores]
 
     with st.sidebar:
-        st.header("⚙️ Panel de Control")
+        st.header("⚙️ Panel de Navegación")
 
         seccion_activa = st.radio(
             "Sección",
-            options=["Emitir opinión", "Consultar opiniones"],
+            options=[
+                "Emitir opinión",
+                "Consultar opiniones",
+                "Ficha y Trayectoria",
+                "Comparador de Carreras"
+            ],
             index=0,
         )
 
         st.divider()
-        st.subheader("🏃 Selección de Futbolista")
+        st.subheader("🏃 Futbolista Activo")
         jugador_id_activo = st.selectbox(
-            "Futbolista a evaluar",
+            "Selecciona un jugador",
             options=ids_jugadores,
             format_func=lambda jid: f"{mapa_jugadores[jid]['nombre']} ({mapa_jugadores[jid]['pais']})",
             key="selector_jugador_sidebar",
@@ -436,8 +607,12 @@ def main() -> None:
 
     if seccion_activa == "Emitir opinión":
         renderizar_seccion_emitir(jugador_seleccionado)
-    else:
+    elif seccion_activa == "Consultar opiniones":
         renderizar_seccion_consultar(catalogo_jugadores, mapa_jugadores)
+    elif seccion_activa == "Ficha y Trayectoria":
+        renderizar_seccion_ficha_estadisticas(jugador_seleccionado)
+    elif seccion_activa == "Comparador de Carreras":
+        renderizar_seccion_comparacion(catalogo_jugadores)
 
 
 if __name__ == "__main__":

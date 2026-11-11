@@ -176,7 +176,83 @@
       "razon": "Valora positivamente su velocidad y desborde, pero reprueba su toma de decisiones en la definición.",
       "modelo": "gpt-4o-mini",
       "version_prompt": "1.0"
+    },
+    {
+      "id": "c7563646-c2aa-4b65-9721-653ce6207593",
+      "fecha_utc": "2026-11-10T11:16:38+00:00",
+      "jugador_id": "j001",
+      "jugador_nombre": "Lionel Messi",
+      "opinion_original": "cristiano ronaldo es mejor que messi",
+      "sentimiento": "negativo",
+      "razon": "El comentario expresa una valoración desfavorable hacia Lionel Messi al considerarlo inferior en la comparación.",
+      "modelo": "gpt-4o-mini",
+      "version_prompt": "1.0"
+    },
+    {
+      "id": "d30fbb5a-25f6-47e7-800d-3f6ccbb58472",
+      "fecha_utc": "2026-11-10T11:17:22+00:00",
+      "jugador_id": "j002",
+      "jugador_nombre": "Cristiano Ronaldo",
+      "opinion_original": "messi es mejor que cristiano ronaldo",
+      "sentimiento": "negativo",
+      "razon": "El comentario expresa una valoración desfavorable hacia Cristiano Ronaldo al considerarlo inferior en la comparación.",
+      "modelo": "gpt-4o-mini",
+      "version_prompt": "1.0"
+    },
+    {
+      "id": "eb60f9ee-c9d0-416a-beab-7b1a9743ca42",
+      "fecha_utc": "2026-11-10T11:17:34+00:00",
+      "jugador_id": "j002",
+      "jugador_nombre": "Cristiano Ronaldo",
+      "opinion_original": "messi y cristiano son iguales",
+      "sentimiento": "neutro",
+      "razon": "El comentario presenta una descripción o afirmación sobre Cristiano Ronaldo sin emitir elogios ni críticas relevantes.",
+      "modelo": "gpt-4o-mini",
+      "version_prompt": "1.0"
+    },
+    {
+      "id": "b72cb971-9d7a-48b8-9514-1e81f9746bb0",
+      "fecha_utc": "2026-11-10T12:22:56+00:00",
+      "jugador_id": "j002",
+      "jugador_nombre": "Cristiano Ronaldo",
+      "opinion_original": "Cristiano ronaldo es el mejor jugador del mundo",
+      "sentimiento": "positivo",
+      "razon": "La opinión expresa admiración y una valoración favorable sobre las cualidades de Cristiano Ronaldo.",
+      "modelo": "gpt-4o-mini",
+      "version_prompt": "1.0"
+    },
+    {
+      "id": "313a65d1-2166-406d-9f2e-8414883f4471",
+      "fecha_utc": "2026-11-10T12:23:14+00:00",
+      "jugador_id": "j002",
+      "jugador_nombre": "Cristiano Ronaldo",
+      "opinion_original": "messi esta por encima de cristiano ronaldo en titulos",
+      "sentimiento": "neutro",
+      "razon": "El comentario presenta una descripción o afirmación sobre Cristiano Ronaldo sin emitir elogios ni críticas relevantes.",
+      "modelo": "gpt-4o-mini",
+      "version_prompt": "1.0"
+    },
+    {
+      "id": "93934022-d384-4520-be5b-66dfe3cb6e4f",
+      "fecha_utc": "2026-11-10T12:23:47+00:00",
+      "jugador_id": "j002",
+      "jugador_nombre": "Cristiano Ronaldo",
+      "opinion_original": "messi es mucho mejor que el",
+      "sentimiento": "positivo",
+      "razon": "La opinión expresa admiración y una valoración favorable sobre las cualidades de Cristiano Ronaldo.",
+      "modelo": "gpt-4o-mini",
+      "version_prompt": "1.0"
+    },
+    {
+      "id": "0a934d4d-fb4f-434f-bab5-a298b8c2be53",
+      "fecha_utc": "2026-11-10T12:23:58+00:00",
+      "jugador_id": "j002",
+      "jugador_nombre": "Cristiano Ronaldo",
+      "opinion_original": "que mucho mejor que cristiano ronaldo",
+      "sentimiento": "negativo",
+      "razon": "El comentario expresa una valoración desfavorable hacia Cristiano Ronaldo al considerarlo inferior en la comparación.",
+      "modelo": "gpt-4o-mini",
+      "version_prompt": "1.0"
     }
   ]
 }
-

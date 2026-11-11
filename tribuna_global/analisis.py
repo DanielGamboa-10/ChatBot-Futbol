@@ -361,7 +361,7 @@ def obtener_nombre_modelo() -> str:
 
 
 def construir_modelo_chat(modelo: str | None = None) -> tuple[Any, str]:
-    """Construye la instancia del modelo de lenguaje con temperatura cero."""
+    """Construye la instancia del modelo de lenguaje con  cero."""
     recargar_entorno()
     nombre_modelo = (modelo or obtener_nombre_modelo()).strip()
     openai_key = (os.getenv("OPENAI_API_KEY") or "").strip()

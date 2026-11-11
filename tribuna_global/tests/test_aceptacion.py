@@ -312,11 +312,13 @@ def test_interfaz_streamlit_limpieza_chat_y_consulta_sin_duplicar() -> None:
     # Filtrar por jugador j001 (Lionel Messi) y luego por sentimiento positivo
     at.selectbox("filtro_consulta_jugador").set_value("j001").run()
     assert not at.exception
-    assert at.metric[0].value == "4"
+    conteo_j001 = len([op for op in cargar_opiniones(RUTA_OPINIONES)["opiniones"] if op["jugador_id"] == "j001"])
+    assert at.metric[0].value == str(conteo_j001)
 
     at.selectbox("filtro_consulta_sentimiento").set_value("positivo").run()
     assert not at.exception
-    assert at.metric[0].value == "1"
+    conteo_j001_pos = len([op for op in cargar_opiniones(RUTA_OPINIONES)["opiniones"] if op["jugador_id"] == "j001" and op["sentimiento"] == "positivo"])
+    assert at.metric[0].value == str(conteo_j001_pos)
 
     # Comprobar que cambiar filtros no agregó ni duplicó registros en disco
     assert len(cargar_opiniones(RUTA_OPINIONES)["opiniones"]) == total_inicial

@@ -104,6 +104,17 @@ def cargar_jugadores(ruta: str | Path = RUTA_JUGADORES) -> list[dict[str, str]]:
                 "id": jugador_id,
                 "nombre": nombre,
                 "pais": pais,
+                "apodo": str(item.get("apodo", "")),
+                "posicion": str(item.get("posicion", "Futbolista")),
+                "foto_url": str(item.get("foto_url", "")),
+                "partidos": int(item.get("partidos", 0)),
+                "goles": int(item.get("goles", 0)),
+                "asistencias": int(item.get("asistencias", 0)),
+                "titulos": int(item.get("titulos", 0)),
+                "balones_de_oro": int(item.get("balones_de_oro", 0)),
+                "botas_de_oro": int(item.get("botas_de_oro", 0)),
+                "trayectoria": list(item.get("trayectoria", [])),
+                "logros": list(item.get("logros", [])),
             }
         )
 
