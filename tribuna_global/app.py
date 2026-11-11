@@ -54,6 +54,195 @@ ETIQUETAS_SENTIMIENTO = {
 }
 
 
+def inyectar_estilos_neon_morado() -> None:
+    """Aplica diseño temático morado con efectos de neón y animación de fútbol profesional."""
+    estilo_css = """
+    <style>
+    /* Efectos de fondo y ambiente cyberpunk morado */
+    .stApp {
+        background: radial-gradient(circle at 15% 20%, #1d0f36 0%, #0b0616 55%, #05020a 100%) !important;
+        color: #f3e8ff !important;
+    }
+
+    /* Resaltados y títulos neón */
+    h1, h2, h3, h4, h5, h6 {
+        color: #e9d5ff !important;
+        text-shadow: 0 0 12px rgba(168, 85, 247, 0.4), 0 0 24px rgba(192, 132, 252, 0.2);
+        font-weight: 700 !important;
+    }
+
+    /* Barra lateral estilizada */
+    [data-testid="stSidebar"] {
+        background: linear-gradient(180deg, #130a24 0%, #0b0616 100%) !important;
+        border-right: 1px solid rgba(168, 85, 247, 0.3) !important;
+        box-shadow: 4px 0 20px rgba(112, 26, 117, 0.25);
+    }
+
+    /* Tarjetas de métricas */
+    [data-testid="stMetric"] {
+        background: rgba(30, 16, 56, 0.7) !important;
+        border: 1px solid rgba(192, 132, 252, 0.3) !important;
+        border-radius: 12px !important;
+        padding: 12px !important;
+        box-shadow: 0 4px 16px rgba(147, 51, 234, 0.2) !important;
+        transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    [data-testid="stMetric"]:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 22px rgba(192, 132, 252, 0.4) !important;
+        border-color: #c084fc !important;
+    }
+    [data-testid="stMetricLabel"] {
+        color: #d8b4fe !important;
+        font-weight: 600 !important;
+    }
+    [data-testid="stMetricValue"] {
+        color: #ffffff !important;
+        text-shadow: 0 0 10px rgba(168, 85, 247, 0.6);
+    }
+
+    /* Botones primarios neón */
+    .stButton > button {
+        background: linear-gradient(135deg, #7e22ce 0%, #9333ea 50%, #a855f7 100%) !important;
+        color: #ffffff !important;
+        border: 1px solid #c084fc !important;
+        border-radius: 10px !important;
+        font-weight: 600 !important;
+        box-shadow: 0 0 15px rgba(147, 51, 234, 0.45) !important;
+        transition: all 0.25s ease-in-out !important;
+    }
+    .stButton > button:hover {
+        background: linear-gradient(135deg, #9333ea 0%, #a855f7 50%, #c084fc 100%) !important;
+        box-shadow: 0 0 25px rgba(192, 132, 252, 0.75) !important;
+        transform: scale(1.02);
+    }
+
+    /* Mensajes de chat */
+    [data-testid="stChatMessage"] {
+        background-color: rgba(26, 14, 48, 0.65) !important;
+        border: 1px solid rgba(168, 85, 247, 0.25) !important;
+        border-radius: 12px !important;
+        backdrop-filter: blur(8px);
+    }
+
+    /* Pestañas seleccionadas */
+    .stTabs [data-baseweb="tab-list"] {
+        border-bottom: 2px solid rgba(168, 85, 247, 0.3) !important;
+    }
+    .stTabs [data-baseweb="tab"] {
+        color: #c084fc !important;
+        font-weight: 600 !important;
+    }
+    .stTabs [aria-selected="true"] {
+        color: #f3e8ff !important;
+        border-bottom-color: #c084fc !important;
+        text-shadow: 0 0 8px rgba(192, 132, 252, 0.6);
+    }
+
+    /* Banner con animación de fútbol en tonos morados neón */
+    .neon-pitch-container {
+        position: relative;
+        width: 100%;
+        height: 80px;
+        background: linear-gradient(90deg, #140827 0%, #240c46 50%, #140827 100%);
+        border: 1px solid #a855f7;
+        border-radius: 14px;
+        box-shadow: 0 0 20px rgba(168, 85, 247, 0.35), inset 0 0 15px rgba(147, 51, 234, 0.25);
+        overflow: hidden;
+        margin-bottom: 24px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 0 20px;
+    }
+    .neon-goal-post-left, .neon-goal-post-right {
+        width: 12px;
+        height: 55px;
+        border: 2px solid #c084fc;
+        box-shadow: 0 0 12px #c084fc;
+    }
+    .neon-goal-post-left {
+        border-left: none;
+        border-radius: 0 8px 8px 0;
+    }
+    .neon-goal-post-right {
+        border-right: none;
+        border-radius: 8px 0 0 8px;
+    }
+    .neon-center-circle {
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        width: 60px;
+        height: 60px;
+        border: 1px dashed rgba(192, 132, 252, 0.4);
+        border-radius: 50%;
+    }
+    .neon-center-line {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        bottom: 0;
+        width: 1px;
+        background: rgba(192, 132, 252, 0.3);
+    }
+    .neon-ball {
+        position: absolute;
+        top: calc(50% - 13px);
+        width: 26px;
+        height: 26px;
+        background: radial-gradient(circle at 35% 35%, #ffffff 0%, #e9d5ff 40%, #7e22ce 100%);
+        border-radius: 50%;
+        box-shadow: 0 0 15px #e9d5ff, 0 0 25px #a855f7, 0 0 35px #9333ea;
+        animation: shotGoal 6s infinite cubic-bezier(0.45, 0.05, 0.55, 0.95);
+    }
+    .neon-ball-trail {
+        position: absolute;
+        top: calc(50% - 2px);
+        height: 4px;
+        background: linear-gradient(90deg, transparent, rgba(192, 132, 252, 0.8), transparent);
+        filter: blur(1px);
+        animation: trailMove 6s infinite cubic-bezier(0.45, 0.05, 0.55, 0.95);
+    }
+
+    @keyframes shotGoal {
+        0% { left: 45px; transform: scale(0.9) rotate(0deg); }
+        35% { left: calc(50% - 13px); transform: scale(1.15) rotate(540deg); }
+        50% { left: calc(100% - 65px); transform: scale(0.85) rotate(900deg); }
+        55% { left: calc(100% - 50px); transform: scale(1) rotate(960deg); }
+        60% { left: calc(100% - 65px); transform: scale(0.9) rotate(1020deg); }
+        85% { left: calc(50% - 13px); transform: scale(1.1) rotate(1400deg); }
+        100% { left: 45px; transform: scale(0.9) rotate(1800deg); }
+    }
+    @keyframes trailMove {
+        0% { left: 35px; width: 20px; opacity: 0.3; }
+        35% { left: calc(50% - 40px); width: 60px; opacity: 0.9; }
+        50% { left: calc(100% - 120px); width: 80px; opacity: 0.8; }
+        60% { left: calc(100% - 90px); width: 25px; opacity: 0.3; }
+        85% { left: calc(50% - 30px); width: 60px; opacity: 0.9; }
+        100% { left: 35px; width: 20px; opacity: 0.3; }
+    }
+    </style>
+    """
+    st.markdown(estilo_css, unsafe_allow_html=True)
+
+
+def renderizar_animacion_futbol() -> None:
+    """Muestra el banner interactivo con la cancha sintetica y animacion de balon neon."""
+    html_animacion = """
+    <div class="neon-pitch-container">
+        <div class="neon-goal-post-left"></div>
+        <div class="neon-center-line"></div>
+        <div class="neon-center-circle"></div>
+        <div class="neon-ball-trail"></div>
+        <div class="neon-ball"></div>
+        <div class="neon-goal-post-right"></div>
+    </div>
+    """
+    st.markdown(html_animacion, unsafe_allow_html=True)
+
+
 def inicializar_estado_sesion() -> None:
     """Inicializa las claves necesarias en st.session_state."""
     if "historial_chat" not in st.session_state:
@@ -640,9 +829,11 @@ def main() -> None:
         page_title="Tribuna Global | Percepcion y Estadisticas de Futbolistas",
         layout="wide",
     )
+    inyectar_estilos_neon_morado()
     inicializar_estado_sesion()
 
     st.title("Tribuna Global: Hub de Futbol & IA")
+    renderizar_animacion_futbol()
     st.markdown(
         "Sistema integral de analisis de percepcion mediante **LangChain** y **Pydantic**, "
         "con estadisticas historicas reales, fichas de carrera y comparativas graficas cara a cara."
